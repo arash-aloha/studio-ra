@@ -1,0 +1,80 @@
+:root {
+  --clr-acc-green: #929979;
+  --clr-bg-white: #fff;
+  --clr-black: #000;
+  --clr-bg-light: #3b3b3b;
+  --clr-bg-dark: #242424;
+  --clr-acc-orange: #ff7600;
+}
+
+@font-face {
+  font-family: "mainRegular";
+  src: url("../assets/NyHemsida2022/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: "mainBold";
+  src: url("../assets/NyHemsida2022/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Bold.ttf") format('truetype');
+}
+@font-face {
+  font-family: "mainLight";
+  src: url("../assets/NyHemsida2022/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Light.ttf") format('truetype');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-size: 1.5rem;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  
+  font-family: "mainRegular";
+}
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+
+/* primary header */
+.sr-only {
+  display: none;
+}
+.logo-title {
+  font-family: "mainBold";
+  font-size: clamp(1em, 10vw, 2.2rem);
+  color: var(--clr-black);
+}
+.menu-bar {
+  background-color: var(--clr-black);
+}
+.primary-header {
+  margin: 6rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mobile-nav-toggle {
+  display: none;
+}
+.primary-navigation {
+  gap: 2em;
+  list-style: none;
+  position: relative;
+  font-size: .75rem;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.main-container {
+  margin: 0 1rem;
+}

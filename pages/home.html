@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <!-- lightbox -->
+  <link href="../lightbox/css/lightbox.css" rel="stylesheet" />
+  <script defer src="../lightbox/js/lightbox-plus-jquery.js"></script>
+  <!-- js -->
+  <script defer src="../js/script.js"></script>
+  
+  <title> Studio Rå </title>
+</head>
+
+<body class="home">
+
+  <!-- <div class="overlay" id="overlay">
+    <header class="overlay-header">
+      <button id="close_overlay"> o </button>
+    </header>   
+  </div> -->
+
+  <header id="primary-header" class="primary-header"> 
+    <div class="mobile-nav-toggle"  >
+      <span class="menu-bar top"></span>
+      <span class="menu-bar"></span>
+      <span class="sr-only"> menu </span>
+    </div>
+    
+    <h5 class="logo">
+      <a href="/pages/home.html" title="home"><span class="logo-title"> Studio Rå </span></a>
+    </h5>
+  </header>
+  
+  <main class="main-container home-wrapper">  
+    <nav>
+      <ul class="primary-navigation" id="primary-navigation">
+        <li class="active"><a href="/pages/home.html" title="home"><span class="primary-navigation-item"> Home </span></a></li>
+        <li><a href="/pages/work.html"><span class="primary-navigation-item"> Work </span> </a></li>
+        <li><a href="/pages/about.html"><span class="primary-navigation-item"> About </span></a></li>
+        <li><a href="/pages/contact.html"><span class="primary-navigation-item"> Contact </span></a></li>
+      </ul>
+    </nav>
+
+    <section class="mobile-hero">
+      <div id="heroImg-container">
+        <img id="heroImg" src="/assets/Images/Home/ConcretePrint1.jpg" alt="ConcretePrint">
+      </div>
+        
+      <a id="heroText" href="#project-start"><span class="icon-down"><i class="bi bi-chevron-compact-down"></i></span>
+      <p class="mobile-hero-text"> Scroll down </p>
+      </a>
+      
+    </section>
+
+    <section class="projects-container" id="project-start">
+      <div class="home__grid">
+        
+        <a href="/assets/NyHemsida2022/home-thumbnails/1.jpeg" 
+            data-lightbox="home" 
+            data-title="Mobile Sauna" 
+            class="card grid-col-span-2 grid-row-span-2">
+          <div class="card__img">
+            <img class="img" src="/assets/NyHemsida2022/home-thumbnails/1.jpeg" alt="Mobile Sauna" >
+          </div>
+          <div class="card__text">
+            <h3> Mobile Sauna </h3>
+            <p> more card info </p>
+          </div>
+        </a>
+
+        <a href="/assets/NyHemsida2022/home-thumbnails/2.jpeg" 
+            data-lightbox="home" 
+            data-title="Autogyron Örebro" 
+            class="card grid-col-span-4 grid-row-span-4">
+          <div class="card__img">
+            <img class="img" src="/assets/NyHemsida2022/home-thumbnails/2.jpeg" alt="Autogyron Örebro" >
+          </div>
+          <div class="card__text">
+            <h3> Autogyron Örebro </h3>
+            <p> Örebro </p>
+          </div>
+        </a>
+
+        <a href="/assets/NyHemsida2022/home-thumbnails/3.jpeg" 
+            data-lightbox="home" 
+            data-title="Norsk Skogsfinsk Museum"
+            class="card grid-col-span-2 grid-row-span-4" >
+          <div class="card__img">
+            <img src="/assets/NyHemsida2022/home-thumbnails/3.jpeg" alt="Norsk Skogsfinsk Museum" >
+          </div>
+          <div class="card__text">
+            <h3> Norsk Skogsfinsk Museum </h3>
+            <p> more card info </p>
+          </div>
+        </a>
+
+        <a href="/assets/NyHemsida2022/home-thumbnails/4.jpeg" 
+            data-lightbox="home" 
+            data-title="Villa concept" 
+            class="card grid-col-span-2 grid-row-span-2">
+          <div class="card__img">
+            <img src="/assets/NyHemsida2022/home-thumbnails/4.jpeg" alt="Villa concept" >
+          </div>
+          <div class="card__text">
+            <h3> Villa Conecpt </h3>
+            <p> more card info </p>
+          </div>
+        </a>
+
+        <a href="/assets/NyHemsida2022/home-thumbnails/5.jpeg" 
+            data-lightbox="home" 
+            data-title="Apartement Fredhäll"  
+            class="card grid-col-span-2 grid-row-span-4">
+          <div class="card__img">
+            <img src="/assets/NyHemsida2022/home-thumbnails/5.jpeg" alt="Apartment Fredhäll" >
+          </div>
+          <div class="card__text">
+            <h3> Apartment Fredhäll </h3>
+            <p> more card info </p>
+          </div>
+        </a>
+
+        <a href="/assets/NyHemsida2022/home-thumbnails/6.jpg" 
+            data-lightbox="home" 
+            data-title="Apartement Fredhäll" 
+            class="card grid-col-span-4 grid-row-span-2">
+          <div class="card__img">
+            <img src="/assets/NyHemsida2022/home-thumbnails/6.jpg" alt="" >
+          </div>
+          <div class="card__text">
+            <h3> Norsk Skogsfinsk Museum </h3>
+            <p> more card info </p>
+          </div>
+        </a>
+
+  
+   
+        
+
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer>  
+    <div class="home-footer">
+      <h5> Studio Rå AB </h5>
+  
+      <h5> 559314-2242 </h5>
+  
+      <h5 id="mailto"> Hello@Studio-Ra.se</h5>
+    </div>
+  </footer>
+  
+</body>
+</html>
