@@ -80,34 +80,25 @@ a {
   0px 0px 10px rgba(0, 0, 0, 0.2),
   0px 0px 25px rgba(0, 0, 0, 0.1);
 }
-
-/* .overlay {
-  display: none;
-} */
-#overlay {
-  position: fixed;
-  width: 100%; 
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.8);
-  
-  cursor: pointer; 
-  display: none;
+/* footer all screens */
+footer {
+  margin: 4rem;
 }
-#overlay.active {
+.home-footer {
+  margin: 4rem 0 0.5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  font-family: "mainLight";
+  font-size: 0.75rem;
+}
+.home-footer h5 {
+  font-size: .55rem;
+  font-family: "mainLight"; 
+  margin-top: 0.5rem;
 }
 
-#close_overlay {
-  width: 2rem;
-  height: 1rem;
-  cursor: pointer;
-}
 
 
 /* on big screens */
@@ -131,6 +122,7 @@ a {
     transform: rotate(180deg);
 
     margin-right: 6rem;
+    position: relative;
   }
   .primary-navigation li a {
     position: relative;
@@ -156,12 +148,18 @@ a {
     transition: height 0.5s;
     transform-origin: right;
   }
-
   .primary-navigation-item:hover::before {
     height: 50%;
     transform-origin: left;
   }
-
+  .primary-navigation li .ac ::before{
+    content: "";
+    height: 50%;
+    width: 2px;
+    background-color: #000;
+    position: absolute;
+    right: 22px;
+  }
   .main-container {
     display: flex;
     justify-content: space-between;
@@ -288,24 +286,6 @@ a {
     grid-row: span 4;
   }
 
-  footer {
-    margin: 4rem;
-  }
-
-  .home-footer {
-    margin: 4rem 0 0.5rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: "mainLight";
-    font-size: 0.75rem;
-  }
-  .home-footer h5 {
-    font-size: .55rem;
-    font-family: "mainLight"; 
-    margin-top: 0.5rem;
-  }
   #mailto {
     cursor: pointer;
   }
