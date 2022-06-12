@@ -25,17 +25,17 @@ function displayScrollText() {
 }
 
 // active hyperlink
-const links = document.querySelectorAll(".primary-navigation li a");
+// const links = document.querySelectorAll(".primary-navigation li a");
+// const linkItem = document.querySelectorAll("primary-navigation-item");
 
-console.log(links)
-links.forEach(link => {
-  console.log("in the loop", link)
-    if(link.href.includes(`${activePage}`)) {
-      linkItem.classList.add('active');
-    }
-    console.log("after the loop", link)
-  });
-  console.log("active page", activePage)
+// links.forEach(link => {
+//   console.log("in the loop", link)
+//     if(link.href.includes(`${activePage}`)) {
+//       linkItem.classList.add('active');
+//     }
+//     console.log("after the loop", link)
+//   });
+//   console.log("active page", activePage)
   
 
 // mouse scroll nav
@@ -62,14 +62,38 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // mail to funciton
-const mailto = document.getElementById("mailto");
-mailto.addEventListener("click", () => {
-  console.log("clicked mailto")
+const mailto = document.getElementById("mailto").addEventListener("click", () => {
   sendEmail();
-})
+});
+
+const mailtoMalin = document.getElementById("mailtoMalin").addEventListener("click", () => {
+  sendEmailToMalin(recipient)
+});
+const mailtoEmilie = document.getElementById("mailtoEmilie").addEventListener("click", () => {
+  sendEmailToEmilie()
+});
+const mailtoCamilo = document.getElementById("mailtoCamilo").addEventListener("click", () => {
+  sendEmailToCamilo()
+});
+
 
 function sendEmail() {
   {
     window.location = "mailto:hello@studio-ra.se";
+  }
+};
+function sendEmailToMalin() {
+  {
+    window.location = "mailto:malin@studio-ra.se";
+  }
+};
+function sendEmailToEmilie() {
+  {
+    window.location = "mailto:emilie@studio-ra.se";
+  }
+};
+function sendEmailToCamilo() {
+  {
+    window.location = "mailto:camilo@studio-ra.se";
   }
 };

@@ -20,61 +20,32 @@
   src: url("../assets/NyHemsida2022/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Light.ttf") format('truetype');
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.work-wrapper {
+  max-width: 1024px;
 }
-html, body {
-  font-size: 1.5rem;
-  overflow-x: hidden;
-  box-sizing: border-box;
+
+
+/* on big screens */
+.work__grid {
   display: flex;
   flex-direction: column;
-  
-  font-family: "mainRegular";
-}
-body {
-  max-width: 1024px;
-  margin: 0 auto;
 }
 
-
-
-/* primary header */
-.sr-only {
-  display: none;
-}
-.logo-title {
-  font-family: "mainBold";
-  font-size: clamp(1em, 10vw, 2.2rem);
-  color: var(--clr-black);
-}
-.menu-bar {
-  background-color: var(--clr-black);
-}
-.primary-header {
-  margin: 6rem 1rem;
+.work-list-items {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
 }
-.mobile-nav-toggle {
-  display: none;
+.work-item-img {
+  height: 15rem;
+  width: 25rem;
+  overflow: hidden;
 }
-.primary-navigation {
-  gap: 2em;
-  list-style: none;
-  position: relative;
-  font-size: .75rem;
-  display: flex;
+.work-item-img img {
+  width: 100%;
 }
-a {
-  text-decoration: none;
-  color: inherit;
+.work-item-description {
+  font-size: 0.8rem
 }
-.main-container {
-  margin: 0 1rem;
-}
+
+/* on small screens */
