@@ -37,7 +37,7 @@ html, body {
   font-family: "mainRegular";
 }
 body {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -147,14 +147,14 @@ footer {
     height: 50%;
     transform-origin: left;
   }
-  /* .link::before{
+  .primary-navigation li a[aria-current="page"]::before {
     content: "";
     height: 50%;
     width: 2px;
     background-color: #000;
     position: absolute;
     right: 22px;
-  } */
+  }
   .main-container {
     display: flex;
     justify-content: space-between;

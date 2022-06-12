@@ -24,19 +24,18 @@ function displayScrollText() {
   heroText.style.opacity = 1;
 }
 
-// active hyperlink
-// const links = document.querySelectorAll(".primary-navigation li a");
-// const linkItem = document.querySelectorAll("primary-navigation-item");
+//active hyperlink
+const links = document.querySelectorAll(".primary-navigation li a");
 
-// links.forEach(link => {
-//   console.log("in the loop", link)
-//     if(link.href.includes(`${activePage}`)) {
-//       linkItem.classList.add('active');
-//     }
-//     console.log("after the loop", link)
-//   });
-//   console.log("active page", activePage)
+links.forEach(link => {
+  console.log("in the loop", link.href)
+    if(link.href.includes(`${activePage}`)) {
+      link.setAttribute('aria-current', 'page');
+    }
+  });
+
   
+
 
 // mouse scroll nav
 let prevScrollpos = window.pageYOffset;

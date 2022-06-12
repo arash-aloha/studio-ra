@@ -23,23 +23,33 @@
 .work-wrapper {
   max-width: 1024px;
 }
-
-
+.project-name {
+  font-family: "mainBold";
+}
+hr {
+  opacity: 0.5;
+}
 /* on big screens */
 .work__grid {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
+/* .work-list-items:first-child {
+  height: 15rem;
+} */
+.work-list-items:nth-child(even) {
+  color: pink;
+}
 .work-list-items {
   display: flex;
   gap: 1rem;
   overflow: hidden;
 }
 .work-item-img {
-  height: 15rem;
-  width: 25rem;
   overflow: hidden;
+  height: 20rem;
 }
 .work-item-img img {
   width: 100%;
