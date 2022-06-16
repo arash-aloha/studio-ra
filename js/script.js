@@ -1,5 +1,31 @@
 
 console.log("Script is running...");
+const activePage = window.location.pathname;
+console.log("active page:", activePage)
+// fade in hero
+const heroImg = document.getElementById("heroImg");
+const heroText = document.getElementById("heroText");
+const homePage = document.querySelector(".home");
+const homeWrapper = document.querySelector(".home-wrapper");
+
+window.setTimeout(displayHome, 1200);
+window.setTimeout(displayImg, 1200);
+window.setTimeout(displayWrapper, 1600);
+window.setTimeout(displayScrollText, 1900);
+
+
+function displayWrapper() {
+  homeWrapper.style.opacity = 1;
+}
+function displayHome() {
+  homePage.style.opacity = 1;
+}
+function displayImg() {
+  heroImg.style.opacity = 1;
+}
+function displayScrollText() {
+  heroText.style.opacity = 1;
+}
 
 
 const primaryNav = document.querySelector(".primary-navigation");
@@ -10,32 +36,18 @@ navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("active");
 });
 
-const activePage = window.location.pathname;
-console.log("active page:", activePage)
-// fade in hero
-const heroImg = document.getElementById("heroImg");
-const heroText = document.getElementById("heroText");
-window.setTimeout(displayImg, 1200);
-window.setTimeout(displayScrollText, 1900);
-function displayImg() {
-  heroImg.style.opacity = 1;
-}
-function displayScrollText() {
-  heroText.style.opacity = 1;
-}
 
 //active hyperlink
 const links = document.querySelectorAll(".primary-navigation li a");
 
 links.forEach(link => {
-  console.log("in the loop", link.href)
     if(link.href.includes(`${activePage}`)) {
       link.setAttribute('aria-current', 'page');
     }
   });
 
   
-
+console.log("script runs again?");
 
 // mouse scroll nav
 let prevScrollpos = window.pageYOffset;
@@ -66,13 +78,13 @@ const mailto = document.getElementById("mailto").addEventListener("click", () =>
 });
 
 const mailtoMalin = document.getElementById("mailtoMalin").addEventListener("click", () => {
-  sendEmailToMalin(recipient)
+  sendEmailToMalin();
 });
 const mailtoEmilie = document.getElementById("mailtoEmilie").addEventListener("click", () => {
-  sendEmailToEmilie()
+  sendEmailToEmilie();
 });
 const mailtoCamilo = document.getElementById("mailtoCamilo").addEventListener("click", () => {
-  sendEmailToCamilo()
+  sendEmailToCamilo();
 });
 
 
