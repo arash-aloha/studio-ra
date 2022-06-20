@@ -1,25 +1,3 @@
-:root {
-  --clr-acc-green: #929979;
-  --clr-bg-white: #fff;
-  --clr-black: #000;
-  --clr-bg-light: #3b3b3b;
-  --clr-bg-dark: #242424;
-  --clr-acc-orange: #ff7600;
-}
-
-@font-face {
-  font-family: "mainRegular";
-  src: url("../assets/NyHemsida2022/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Regular.ttf") format('truetype');
-}
-@font-face {
-  font-family: "mainBold";
-  src: url("../assets/NyHemsida2022/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Bold.ttf") format('truetype');
-}
-@font-face {
-  font-family: "mainLight";
-  src: url("../assets/NyHemsida2022/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Light.ttf") format('truetype');
-}
-
 .project-name {
   font-family: "mainBold";
 }
@@ -28,18 +6,35 @@ hr {
   margin: 1rem 0rem 1rem 0rem;
   width: 40%;
 }
-
-/* on big screens */
-.work__grid {
-  display: flex;
-  
-  gap: 1rem;
+.work-wrapper {
+  width: 100%;
+  margin-right: 20rem;
 }
 .work-item {
-  
+  position: relative;
+  height: 5rem;
+  overflow: hidden;
 }
+/* .work-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0,0, 0.4);
+  opacity: 0;
+  transition: .3s ease;
+} */
+
 .work-item-description {
-  font-size: 0.8rem
+  font-size: 0.8rem;
+}
+
+/* on big screens */
+@media (min-width: 45em) {
+  
 }
 
 /* on small screens */

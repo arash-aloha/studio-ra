@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studio Rå | About</title>
-  <link rel="stylesheet" href="../css/home.css">
-  <link rel="stylesheet" href="../css//about.css">
-  <script defer src="../js/script.js"></script>
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/work.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- lightbox -->
+    <link href="../lightbox/css/lightbox.css" rel="stylesheet" />
+    <script defer src="../lightbox/js/lightbox-plus-jquery.js"></script>
+    <!-- js -->
+    <script defer src="../js/script.js"></script>
+  <title>Studio Rå | Co-housing concept</title>
 </head>
-<body class="about">
-
-  <div id="overlay"></div>
-  <header class="primary-header" id="primary-header"> 
+<body class="work-item-site">
+  <header id="primary-header" class="primary-header"> 
     <div class="mobile-nav-toggle"  >
       <span class="menu-bar top"></span>
       <span class="menu-bar"></span>
@@ -24,7 +28,7 @@
     </h5>
   </header>
 
-  <main class="main-container about-wrapper">  
+  <main class="main-container work-wrapper">  
     <nav>
       <ul class="primary-navigation" id="primary-navigation">
         <li><a href="/pages/home.html" title="home"><span class="primary-navigation-item"> Home </span></a></li>
@@ -33,32 +37,23 @@
         <li><a href="/pages/contact.html" title="contact"><span class="primary-navigation-item"> Contact </span></a></li>
       </ul>
     </nav>
-    
-    <section class="about-container">
-      <p class="about-header"> about. </p>
-      <div class="about-img-container">
-        <img src="/assets/Images/About/minnayr_studiorå_10.jpg" alt="studio ra team">
-        <p class="about-description"> 
-          
-          Studio Rå is a young architecture practice based in Stockholm, founded in 2021 by Malin Rönnerfalk and Emilie Dafgård. The office works mainly with housing, hotels and offices and has an experinemtal approach focused on sustainability, clear materiality and clean lines.
-  
-        </p>
-        <footer>  
-          <div class="about-footer">
-            <p> Studio Rå AB </p>
-        
-            <p> 559314-2242 </p>
-        
-            <p id="mailto"> Hello@Studio-Ra.se </p>
+
+    <section class="lightbox-wrapper">
+      <h5>Co-housing concept</h5>
+      <div class="thumbs">
+
+        <a href="#" class="work-item">
+          <div class="work-item-description">
+            <p>
+              <span class="project-name">Co-housing concept</span><br/>
+              Housing 4 000 m²<br/>
+              Research project Malmö 2016       
+            </p><br/>
+          <p>Experimental co-housing project.</p>
           </div>
-        </footer>
+        </a>
       </div>
-      
-
     </section>
-
   </main>
-
-
 </body>
 </html>
