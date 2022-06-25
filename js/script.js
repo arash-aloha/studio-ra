@@ -8,11 +8,26 @@ const heroText = document.getElementById("heroText");
 const homePage = document.querySelector(".home");
 const homeWrapper = document.querySelector(".home-wrapper");
 
-window.setTimeout(displayHome, 1200);
-window.setTimeout(displayImg, 1200);
-window.setTimeout(displayWrapper, 1600);
-window.setTimeout(displayScrollText, 1900);
 
+const checkFirstVisit = () => {
+  if(document.cookie.indexOf('mycookie')==-1) {
+    // cookie doesn't exist, create it now
+    setTimeout(displayHome, 1200);
+    setTimeout(displayImg, 1200);
+    setTimeout(displayWrapper, 1600);
+    setTimeout(displayScrollText, 1900);
+    document.cookie = 'mycookie=1';
+  }
+  else {
+    // not first visit, do nothing
+    setTimeout(displayHome, 1200);
+    setTimeout(displayImg, 1200);
+    setTimeout(displayWrapper, 1600);
+    setTimeout(displayScrollText, 1900);
+  }
+}
+
+checkFirstVisit();
 
 function displayWrapper() {
   homeWrapper.style.opacity = 1;
@@ -26,6 +41,7 @@ function displayImg() {
 function displayScrollText() {
   heroText.style.opacity = 1;
 }
+
 
 
 const primaryNav = document.querySelector(".primary-navigation");
@@ -72,21 +88,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+//fade-in 
+checkFirstVisit();
+
+function displayWrapper() {
+  homeWrapper.style.opacity = 1;
+}
+function displayHome() {
+  homePage.style.opacity = 1;
+}
+function displayImg() {
+  heroImg.style.opacity = 1;
+}
+function displayScrollText() {
+  heroText.style.opacity = 1;
+}
+
 // mail to funciton
-const mailto = document.getElementById("mailto").addEventListener("click", () => {
+let mailto = document.getElementById("mailto");
+mailto.addEventListener("click", () => {
   sendEmail();
 });
 
-const mailtoMalin = document.getElementById("mailtoMalin").addEventListener("click", () => {
+let mailtoMalin = document.getElementById("mailtoMalin");
+mailtoMalin.addEventListener("click", () => {
   sendEmailToMalin();
 });
-const mailtoEmilie = document.getElementById("mailtoEmilie").addEventListener("click", () => {
+
+let mailtoEmilie = document.getElementById("mailtoEmilie");
+mailtoEmilie.addEventListener("click", () => {
   sendEmailToEmilie();
 });
-const mailtoCamilo = document.getElementById("mailtoCamilo").addEventListener("click", () => {
-  sendEmailToCamilo();
+
+let mailtoCamilo = document.getElementById("mailtoCamilo");
+mailtoCamilo.addEventListener("click", () => {
+  console.log("clicked on camilo")
+  window.location = "mailto:camilo@studio-ra.se";
 });
 
+console.log(mailtoCamilo)
 
 function sendEmail() {
   {
@@ -105,6 +145,6 @@ function sendEmailToEmilie() {
 };
 function sendEmailToCamilo() {
   {
-    window.location = "mailto:camilo@studio-ra.se";
+    
   }
 };

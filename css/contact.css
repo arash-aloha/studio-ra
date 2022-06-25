@@ -21,7 +21,7 @@
 }
 .contact-description {
   font-family: "mainRegular";
-  font-size: clamp(0.6rem,0.9vw,0.9rem);
+  font-size: clamp(0.6rem,0.9vw,0.7rem);
   line-height: 1rem;
   letter-spacing: 0.01rem;
 }
@@ -40,6 +40,8 @@
   font-family: "mainLight";
   font-size: 0.65rem;
 }
+
+/* big screen */
 @media (min-width: 45em) {
   .contact-wrapper {
     height: 100vh;
@@ -47,7 +49,11 @@
   .contact-footer {
     margin-top: auto;
   }
+  .contact-description {
+    margin-top: 1rem;
+  }
 }
+
 
 /* mobile */
 @media (max-width: 45em) {
@@ -77,6 +83,7 @@
     font-size: clamp(0.7rem,1.5vw,1.5rem);
     align-self: flex-end;
     margin-left: 1rem;
+    margin-bottom: 0.2rem;
   }
   .contact-footer {
     margin-top: auto;
