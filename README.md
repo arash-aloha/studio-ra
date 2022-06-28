@@ -1,2 +1,2 @@
 # studio-ra
-website for architect firm
+website for an architect firm
