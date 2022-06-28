@@ -93,4 +93,7 @@ hr {
     background-color: var(--clr-bg-white);
     z-index: 2000;
   }
+  .work-container {
+    margin: 0 1rem;
+  }
 }

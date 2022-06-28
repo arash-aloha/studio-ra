@@ -1,5 +1,6 @@
 
 console.log("Script is running...");
+
 const activePage = window.location.pathname;
 console.log("active page:", activePage)
 // fade in hero
@@ -61,9 +62,6 @@ links.forEach(link => {
       link.setAttribute('aria-current', 'page');
     }
   });
-
-  
-console.log("script runs again?");
 
 // mouse scroll nav
 let prevScrollpos = window.pageYOffset;
