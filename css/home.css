@@ -41,7 +41,6 @@ body {
   margin: 0 auto;
 }
 
-
 .home {
   opacity: 0;
   transition: opacity 0.9s linear;
@@ -255,6 +254,8 @@ footer {
     transition: opacity ease-out 250ms;
     font-family: "mainLight";
     font-size: .75rem;
+    width: 100%;
+    text-align: center;
   }
   .card:hover .card__text {
     opacity: 1;
@@ -281,7 +282,7 @@ footer {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 180px 2fr;
+    /* grid-auto-rows: 180px 2fr; */
   }
   .grid-col-span-1 {
     grid-column: span 1;
@@ -313,6 +314,7 @@ footer {
   .grid-row-span-4 {
     grid-row: span 4;
   }
+
 
   /*********** alt msnry **************/
   /* remove hight on C */

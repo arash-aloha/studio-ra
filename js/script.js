@@ -1,4 +1,5 @@
 
+
 console.log("Script is running...");
 
 const activePage = window.location.pathname;
@@ -11,6 +12,7 @@ const homeWrapper = document.querySelector(".home-wrapper");
 
 
 const checkFirstVisit = () => {
+
   if(document.cookie.indexOf('mycookie')==-1) {
     // cookie doesn't exist, create it now
     setTimeout(displayHome, 1200);
@@ -21,10 +23,10 @@ const checkFirstVisit = () => {
   }
   else {
     // not first visit, do nothing
-    setTimeout(displayHome, 1200);
-    setTimeout(displayImg, 1200);
-    setTimeout(displayWrapper, 1600);
-    setTimeout(displayScrollText, 1900);
+    setTimeout(displayHome, 0);
+    setTimeout(displayImg, 0);
+    setTimeout(displayWrapper, 0);
+    setTimeout(displayScrollText, 0);
   }
 }
 
@@ -108,17 +110,17 @@ mailto.addEventListener("click", () => {
   sendEmail();
 });
 
-let mailtoMalin = document.getElementById("mailtoMalin");
+let mailtoMalin = document.querySelector("#mailtoMalin");
 mailtoMalin.addEventListener("click", () => {
   sendEmailToMalin();
 });
 
-let mailtoEmilie = document.getElementById("mailtoEmilie");
+let mailtoEmilie = document.querySelector("#mailtoEmilie");
 mailtoEmilie.addEventListener("click", () => {
   sendEmailToEmilie();
 });
 
-let mailtoCamilo = document.getElementById("mailtoCamilo");
+let mailtoCamilo = document.querySelector("#mailtoCamilo");
 mailtoCamilo.addEventListener("click", () => {
   console.log("clicked on camilo")
   window.location = "mailto:camilo@studio-ra.se";
