@@ -64,6 +64,9 @@ body {
 .mobile-nav-toggle {
   display: none;
 }
+.fancybox__backdrop {
+  background-color: rgba(255,255,255, 0.98) !important; /* <<-- this one  */
+}
 .primary-navigation {
   gap: 2em;
   list-style: none;
@@ -445,19 +448,6 @@ footer {
   }
   
 
-  /* animation: move down .3s linear;
-@keyframes move-down {
-  0% {
-    top: 10%
-  }
-  50% {
-    top: 25%
-  }
-  100% {
-    top: 50%
-  }
-} */
-
 
   .projects-container {
     display: flex; 
@@ -484,6 +474,7 @@ footer {
   }
   .card__text {
     padding: .3rem;
+    display: none;
   }
 }
 /* supports other browser */
