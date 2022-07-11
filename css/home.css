@@ -369,7 +369,7 @@ footer {
   .primary-navigation {
     display: flex;
     position: absolute;
-    flex-direction: column;
+    flex-direction:column-reverse !important;
     align-items: center;
     justify-content: center;
     z-index: 1000;
@@ -447,7 +447,11 @@ footer {
     margin-top: 5rem;
   }
   
-
+  .fancybox__caption {
+    color: var(--clr-black) !important;
+    font-family: "mainLight" !important;
+    font-size: 1rem;
+  }
 
   .projects-container {
     display: flex; 
@@ -460,6 +464,7 @@ footer {
   .home__grid {
     column-count: 1; 
     column-gap: 0.5rem;
+    text-align: center;
   }
 
   .card {

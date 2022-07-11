@@ -1,8 +1,8 @@
 const folkungavallen = [
   {
-    src: '../assets/Images/Work/FolkungavallenLinköping/linköping_gatuperspektiv.jpg',
+    src: '../assets/Images/Work/FolkungavallenLinkoping/linkoping_gatuperspektiv.jpg',
     caption : 'Folkungavallen Linköping',
-    thumb   : '../assets/Images/Work/FolkungavallenLinköping/linköping_gatuperspektiv_thumb.jpg',
+    thumb   : '../assets/Images/Work/FolkungavallenLinkoping/linkoping_gatuperspektiv_thumb.jpg',
     type: "image",
     preload: true
   },

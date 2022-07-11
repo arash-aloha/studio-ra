@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="/css/work.css" />
+    <link rel="stylesheet" href="../css/work.css" />
+    <link rel="stylesheet" href="../css/home.css" />
     <!-- icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
     <!-- js -->
+    <script defer src="../js/script.js"></script>
     <script defer src="../js/work.js"></script>
 
     <title>Studio Rå | Work</title>
@@ -43,15 +44,10 @@
       <section class="work-container">
         <div class="works__">
 
+
+
           <div class="year-placeholder">
             <p class="year">2022</p>
-
-
-            <div id="sandbox"> image shown here 
-              <div id="workItemImageContainer">
-                <img src="" alt="work-item" id="workItemImage"/>
-              </div>
-            </div>
             
             <div class="workItemContainer">
               <div class="work-item">
@@ -134,7 +130,6 @@
             </div>
           </div>
 
-
           <div class="year-placeholder">
             <p class="year">2020</p>
 
@@ -164,14 +159,21 @@
           </div>
         </div>
 
-        <footer>
-          <div class="home-footer">
-            <p>Studio Rå AB</p>
-            <p>559314-2242</p>
-            <p id="mailto">Hello@Studio-Ra.se</p>
+        <div id="sandbox"> 
+          <div id="workItemImageContainer"
+          class="workItemImageContainer">
+            <img src="" id="workItemImage" />
           </div>
-        </footer>
+        </div>
+
       </section>
     </main>
+    <footer class="work-footer">
+      <div>
+        <p>Studio Rå AB</p>
+        <p>559314-2242</p>
+        <p id="mailto">Hello@Studio-Ra.se</p>
+      </div>
+    </footer>
   </body>
 </html>

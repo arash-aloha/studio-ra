@@ -1,19 +1,15 @@
-const containers = document.querySelectorAll(".work-item");
-
 const items = document.querySelectorAll(".work-item-anchor");
-const images = document.querySelectorAll(".work-item-image")
 const workItemImage = document.getElementById("workItemImage");
-
-console.log(workItemImage)
+const workItemImageContainer = document.getElementById("workItemImageContainer");
 
 
 items.forEach(item => {
   item.addEventListener("mouseenter", (e) => {
-    console.log("e", e.target)
     imageData = e.target.getAttribute('data-image');
-    
-    console.log("imageData: ", imageData);
-    workItemImage.setAttribute("src", imageData)
+    workItemImage.setAttribute("src", imageData);
+    workItemImage.style.opacity = 1;
+    workItemImage.style.transition = "opacity .75s linear";
+    workItemImageContainer.style.opacity = 1;
   });
   // item.addEventListener('mousemove', (e) => {
   //   image.style.top = e.clientY + 'px'
@@ -21,6 +17,9 @@ items.forEach(item => {
   // })
   item.addEventListener("mouseleave", () => {
     workItemImage.setAttribute("src", "");
+    workItemImage.style.opacity = 0;
+    workItemImage.style.transition = "opacity .75s linear";
+    workItemImageContainer.style.opacity = 0;
   });
 });
 
