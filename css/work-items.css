@@ -1,0 +1,33 @@
+.workItem-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.project-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.work-item-description {
+  margin: .5rem;
+}
+.work-item-description h5 {
+  letter-spacing: 0.05rem;
+  margin-bottom: .5rem;
+}
+.work-item-description p {
+  font-family: "mainLight";
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  margin: .2rem 0;
+}
+.itemImagesContainer img {
+  width: 100%;
+}
+.thumbs {
+  margin: 1rem .5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem;
+}
+.thumbs img {
+  width: 4rem;
+}

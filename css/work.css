@@ -7,6 +7,7 @@
 }
 .work-container {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 .year-placeholder{
@@ -49,6 +50,7 @@
 }
 
 .workItemImageContainer {
+  width: 15rem;
   opacity: 1;
 }
 .workItemImageContainer img {
@@ -83,13 +85,15 @@
 }
 
 /* on small screens */
-@media (max-width: 55em) {
-
+@media (max-width: 65em) {
   #sandbox {
     display: none;
   }
   .works__ {
     width: 100%;
+  }
+  .year-placeholder {
+    gap: 4rem;
   }
 
 }
@@ -100,8 +104,11 @@
     margin-bottom: 1rem;
   }
   .year-placeholder {
-    gap: 4rem;
+    gap: 1rem;
     margin: 2rem 1rem 2rem 1rem;
     width: 100%;
+  }
+  .workItemContainer {
+    margin-right: 2rem;
   }
 }
