@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 1rem;
+  gap: .2rem;
 }
 .work-item {
   position: relative;
@@ -37,6 +37,7 @@
 }
 .work-item-description p {
   font-size: 0.85rem;
+  letter-spacing: .03rem;
 }
 .work-item-description .project-name {
   font-family: "mainLight";
@@ -50,8 +51,14 @@
 }
 
 .workItemImageContainer {
-  width: 15rem;
+  width: 20rem;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+.workItemImageContainer.active {
   opacity: 1;
+  transition: opacity 1s linear;
 }
 .workItemImageContainer img {
   width: 100%;
@@ -81,7 +88,9 @@
 
 /* on big screens */
 @media (min-width: 45em) {
-  
+  .workItemContainer{
+    gap: 1rem;
+  }
 }
 
 /* on small screens */

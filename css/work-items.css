@@ -1,10 +1,11 @@
+.work-items-body {
+  width: 100%;
+}
 .workItem-wrapper {
   width: 100%;
-  overflow: hidden;
 }
 .project-wrapper {
   width: 100%;
-  overflow: hidden;
 }
 .work-item-description {
   margin: .5rem;
@@ -22,6 +23,9 @@
 .itemImagesContainer img {
   width: 100%;
 }
+.lg-image-container {
+  height: 24rem;
+}
 .thumbs {
   margin: 1rem .5rem;
   display: flex;
@@ -30,4 +34,27 @@
 }
 .thumbs img {
   width: 4rem;
+}
+.icon-back {
+  color: var(--clr-bg-light);
+  font-size: 1rem;
+}
+
+/* on big screens */
+@media (min-width: 45em) {
+  .workItemContainer{
+    gap: 1rem;
+  }
+  .work-item-description {
+    margin: 0;
+  }
+  .thumbs {
+    margin: 1.2rem 0;
+  }
+  .lg-image-container {
+    height: 35rem;
+  }
+  .icon-back {
+    margin: 1rem 0;
+  }
 }

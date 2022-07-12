@@ -4,47 +4,6 @@ console.log("Script is running...");
 
 const activePage = window.location.pathname;
 console.log("active page:", activePage)
-// fade in hero
-const heroImg = document.getElementById("heroImg");
-const heroText = document.getElementById("heroText");
-const homePage = document.querySelector(".home");
-const homeWrapper = document.querySelector(".home-wrapper");
-
-
-const checkFirstVisit = () => {
-
-  if(document.cookie.indexOf('mycookie')==-1) {
-    // cookie doesn't exist, create it now
-    setTimeout(displayHome, 1200);
-    setTimeout(displayImg, 1200);
-    setTimeout(displayWrapper, 1600);
-    setTimeout(displayScrollText, 1900);
-    document.cookie = 'mycookie=1';
-  }
-  else {
-    // not first visit, do nothing
-    setTimeout(displayHome, 0);
-    setTimeout(displayImg, 0);
-    setTimeout(displayWrapper, 0);
-    setTimeout(displayScrollText, 0);
-  }
-}
-
-checkFirstVisit();
-
-function displayWrapper() {
-  homeWrapper.style.opacity = 1;
-}
-function displayHome() {
-  homePage.style.opacity = 1;
-}
-function displayImg() {
-  heroImg.style.opacity = 1;
-}
-function displayScrollText() {
-  heroText.style.opacity = 1;
-}
-
 
 
 const primaryNav = document.querySelector(".primary-navigation");
@@ -88,21 +47,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-//fade-in 
-checkFirstVisit();
 
-function displayWrapper() {
-  homeWrapper.style.opacity = 1;
-}
-function displayHome() {
-  homePage.style.opacity = 1;
-}
-function displayImg() {
-  heroImg.style.opacity = 1;
-}
-function displayScrollText() {
-  heroText.style.opacity = 1;
-}
 
 // mail to funciton
 let mailto = document.getElementById("mailto");
@@ -110,41 +55,3 @@ mailto.addEventListener("click", () => {
   sendEmail();
 });
 
-let mailtoMalin = document.querySelector("#mailtoMalin");
-mailtoMalin.addEventListener("click", () => {
-  sendEmailToMalin();
-});
-
-let mailtoEmilie = document.querySelector("#mailtoEmilie");
-mailtoEmilie.addEventListener("click", () => {
-  sendEmailToEmilie();
-});
-
-let mailtoCamilo = document.querySelector("#mailtoCamilo");
-mailtoCamilo.addEventListener("click", () => {
-  console.log("clicked on camilo")
-  window.location = "mailto:camilo@studio-ra.se";
-});
-
-console.log(mailtoCamilo)
-
-function sendEmail() {
-  {
-    window.location = "mailto:hello@studio-ra.se";
-  }
-};
-function sendEmailToMalin() {
-  {
-    window.location = "mailto:malin@studio-ra.se";
-  }
-};
-function sendEmailToEmilie() {
-  {
-    window.location = "mailto:emilie@studio-ra.se";
-  }
-};
-function sendEmailToCamilo() {
-  {
-    
-  }
-};
