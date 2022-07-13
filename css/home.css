@@ -9,15 +9,15 @@
 
 @font-face {
   font-family: "mainRegular";
-  src: url("../assets/NyHemsida2022/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Regular.ttf") format('truetype');
+  src: url("../assets/fonts/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Regular.ttf") format('truetype');
 }
 @font-face {
   font-family: "mainBold";
-  src: url("../assets/NyHemsida2022/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Bold.ttf") format('truetype');
+  src: url("../assets/fonts/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Bold.ttf") format('truetype');
 }
 @font-face {
   font-family: "mainLight";
-  src: url("../assets/NyHemsida2022/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Light.ttf") format('truetype');
+  src: url("../assets/fonts/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Light.ttf") format('truetype');
 }
 
 *,

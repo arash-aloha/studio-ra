@@ -1,4 +1,4 @@
-// fade in hero
+// fade in hero 
 const heroImg = document.getElementById("heroImg");
 const heroText = document.getElementById("heroText");
 const homePage = document.querySelector(".home");
@@ -6,9 +6,8 @@ const homeWrapper = document.querySelector(".home-wrapper");
 
 
 const checkFirstVisit = () => {
-
   if(document.cookie.indexOf('mycookie')==-1) {
-    // cookie doesn't exist, create it now
+    // cookie doesn't exist, create it now    
     setTimeout(displayHome, 1200);
     setTimeout(displayImg, 1200);
     setTimeout(displayWrapper, 1600);

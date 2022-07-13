@@ -6,6 +6,7 @@
   justify-content: space-between;
 }
 .work-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 100%;

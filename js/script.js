@@ -3,8 +3,6 @@
 console.log("Script is running...");
 
 const activePage = window.location.pathname;
-console.log("active page:", activePage)
-
 
 const primaryNav = document.querySelector(".primary-navigation");
 const navToggle = document.querySelector(".mobile-nav-toggle");
