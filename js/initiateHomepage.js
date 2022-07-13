@@ -38,20 +38,3 @@ function displayImg() {
 function displayScrollText() {
   heroText.style.opacity = 1;
 }
-
-
-//fade-in 
-checkFirstVisit();
-
-function displayWrapper() {
-  homeWrapper.style.opacity = 1;
-}
-function displayHome() {
-  homePage.style.opacity = 1;
-}
-function displayImg() {
-  heroImg.style.opacity = 1;
-}
-function displayScrollText() {
-  heroText.style.opacity = 1;
-}

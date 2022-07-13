@@ -16,21 +16,20 @@ items.forEach(item => {
     //append to container
     workItemImageContainer.appendChild(largeImg);
     workItemImageContainer.classList.add("active");
-    // workItemImageContainer.style.opacity = 1;
-    // workItemImageContainer.style.transition = "opacity 1s linear";
-    // workItemImageContainer.style.opacity = 1;
+    workItemImageContainer.classList.remove("fade");
+
   });
   // item.addEventListener('mousemove', (e) => {
   //   image.style.top = e.clientY + 'px'
   //   image.style.left = e.clientX + 'px'
   // })
   item.addEventListener("mouseleave", () => {
+    //if img el is true, remove el
     while (workItemImageContainer.firstChild) {
       workItemImageContainer.removeChild(workItemImageContainer.firstChild);
     }
     workItemImageContainer.classList.remove("active");
-    // workItemImageContainer.style.opacity = 0;
-    // workItemImageContainer.style.transition = "opacity 1s linear";
+    workItemImageContainer.classList.add("fade");
   });
 });
 

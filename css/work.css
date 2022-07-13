@@ -53,12 +53,19 @@
 .workItemImageContainer {
   width: 20rem;
   height: 100%;
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 1s linear;
+  transition: visibility 1s, opacity 1s linear;
 }
 .workItemImageContainer.active {
+  visibility: visible;
   opacity: 1;
   transition: opacity 1s linear;
+}
+.workItemImageContainer.fade {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
 }
 .workItemImageContainer img {
   width: 100%;
@@ -68,13 +75,6 @@
   /* overflow: hidden;
     background: cover;  */
 }
-/* #sandbox > * {
-  transform: translateX(150px);
-  transition: transform .35s;
-} */
-/* .work-item:hover #sandbox > * {
-  transform: translateX(0);
-} */
 
 .work-footer {
   height: 30vh;

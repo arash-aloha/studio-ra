@@ -6,6 +6,7 @@
 }
 .project-wrapper {
   width: 100%;
+  margin-bottom: 2rem;
 }
 .work-item-description {
   margin: .5rem;
@@ -18,13 +19,20 @@
   font-family: "mainLight";
   font-size: 0.75rem;
   letter-spacing: 0.05rem;
-  margin: .2rem 0;
+  margin: .8rem 0;
 }
 .itemImagesContainer img {
   width: 100%;
+  
 }
 .lg-image-container {
   height: 24rem;
+  overflow: hidden;
+
+}
+.lg-image-container img {
+  width: 100%;
+  height: 100%;
 }
 .thumbs {
   margin: 1rem .5rem;
@@ -33,7 +41,8 @@
   gap: .2rem;
 }
 .thumbs img {
-  width: 4rem;
+  width: 5rem;
+  height: 4rem;
 }
 .icon-back {
   color: var(--clr-bg-light);
@@ -52,7 +61,7 @@
     margin: 1.2rem 0;
   }
   .lg-image-container {
-    height: 35rem;
+    height: auto;
   }
   .icon-back {
     margin: 1rem 0;
