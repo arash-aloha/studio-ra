@@ -15,7 +15,7 @@ const autogyron = [
   },
 ]
 
-$("#autogyron").on('click', function() {
+$(".autogyron").on('click', function() {
   Fancybox.show(autogyron, {
     // Your options go here
     loop : true,

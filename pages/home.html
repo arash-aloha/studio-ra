@@ -4,25 +4,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- font -->
+  <link rel="preload" href="../assets/fonts/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Regular.ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../assets/fonts/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Bold.ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../assets/fonts/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Light.ttf" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/fonts.css">
+
+  <!-- <noscript>
+    <link rel="stylesheet" href="../css/fonts.css">
+  </noscript> -->
+
   <!-- CSS -->
-  <link rel="stylesheet" href="../css/home.css">
-  <link rel="stylesheet" href="../css/fancylightbox.css">
+  <link rel="preload" href="../css/home.css" as="style"
+  onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../css/home.css"></noscript>
   <link rel="stylesheet" href="../css/loading.css">
+
   <!-- icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
   
- 
   <!-- js -->
-  <script src="../js/loading.js"></script>
+  <script defer src="../js/loading.js"></script>
   <script defer src="../js/script.js"></script>
+  <script defer src="../js/observe.js"></script>
   <script defer src="../js/initiateHomepage.js"></script>
   
   <!-- fancybox and bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"  integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/fancylightbox.css">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.slim.js"  integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 
-
+  <!-- lightbox/fancybox images -->
    <script defer src="../lightbox/ApartmentFredhall.js"></script>
    <script defer src="../lightbox/Autogyron.js"></script>
    <script defer src="../lightbox/Barkaby.js"></script>
@@ -32,6 +47,7 @@
    <script defer src="../lightbox/Folkungavallen.js"></script>
    <script defer src="../lightbox/Lamp.js"></script>
    <script defer src="../lightbox/MobileSauna.js"></script>
+   <script defer src="../lightbox/NorskFinskMuseum.js"></script>
    <script defer src="../lightbox/PavillionDjuprora.js"></script>
    <script defer src="../lightbox/Portkvarteren.js"></script>
    <script defer src="../lightbox/RogalandHusby.js"></script>
@@ -40,7 +56,6 @@
    <script defer src="../lightbox/Table.js"></script>
    <script defer src="../lightbox/Vasjon.js"></script>
    
-
   <title> Studio Rå </title>
 </head>
 
@@ -76,7 +91,7 @@
       
       <section class="mobile-hero">
         <div id="heroImg-container">
-          <img id="heroImg" src="/assets/Images/Home/ConcretePrint1_thumb.jpg" alt="ConcretePrint">
+          <img id="heroImg" src="/assets/Images/Home/ConcretePrint1_thumb.jpg" alt=" ">
         </div>
           
         <a id="heroText" href="#home_start"><span class="icon-down"><i class="bi bi-chevron-compact-down"></i></span>
@@ -88,12 +103,11 @@
       <div class="home__grid" id="home_start">
         
 
-
         <div
           data-caption="Concept for a Villa" 
           class="card grid-col-span-2 grid-row-span-1 conceptVilla">
           <div class="card__img">
-            <img class="img" src="/assets/Images/Home/VillaConcept01.jpg" alt="VillaConcept01" >
+            <img class="img" src="/assets/Images/Home/VillaConcept01.jpg" alt=" " loading="lazy" >
           </div>
           <div class="card__text">
             <h3> Concept for a villa </h3>
@@ -104,7 +118,8 @@
         data-caption="Barkarbystaden Kv 15"
         class="card grid-col-span-4 grid-row-span-2 barkaby">
           <div class="card__img">
-            <img class="img" src="/assets/Images/Home/Barkaby-HIGH-105_thumb.jpg" alt="Barkaby-HIGH-105" >
+            <img class="img" src="/assets/Images/Home/Barkaby-HIGH-105_thumb.jpg" alt=" " 
+            loading="lazy">
           </div>
           <div class="card__text">
             <h3> Barkarbystaden Kv 15 </h3>
@@ -115,7 +130,7 @@
             data-caption="Väsjön"
             class="card grid-col-span-2 grid-row-span-2 vasjon" >
           <div class="card__img">
-            <img src="/assets/Images/Work/Vasjon/Vasjon01_thumb.jpg" alt="Väsjön" >
+            <img src="/assets/Images/Work/Vasjon/Vasjon01_thumb.jpg" alt=" " loading="lazy" >
           </div>
           <div class="card__text">
             <h3> Väsjön </h3>
@@ -126,7 +141,8 @@
             data-caption="Villa Concept" 
             class="card grid-col-span-2 grid-row-span-1 conceptVilla">
           <div class="card__img">
-            <img src="/assets/Images/Home/VillaConcept03.jpg" alt="Villa concept" >
+            <img src="/assets/Images/Home/VillaConcept03.jpg" alt=" "
+            loading="lazy" >
           </div>
           <div class="card__text">
             <h3> Villa Concept </h3>
@@ -137,7 +153,7 @@
           data-caption="Folkungavallen Linköping"  
           class="card grid-col-span-2 grid-row-span-1 folkavallen">
           <div class="card__img">
-            <img src="/assets/Images/Home/linkoping_gatuperspektiv_thumb.jpg" alt="Folkungavallen Linköping Gatuperspektiv">
+            <img src="/assets/Images/Home/linkoping_gatuperspektiv_thumb.jpg" alt=" " loading="lazy">
           </div>
           <div class="card__text">
             <h3> Folkungavallen Linköping </h3>
@@ -148,7 +164,7 @@
             data-caption="Mobile Sauna" 
             class="card grid-col-span-4 grid-row-span-1 mobileSauna">
           <div class="card__img">
-            <img src="/assets/Images/Home/mobilesauna1_thumb.jpg" alt="Mobile Sauna" >
+            <img src="/assets/Images/Home/mobilesauna1_thumb.jpg" alt=" " >
           </div>
           <div class="card__text">
             <h3> Mobile Sauna </h3>
@@ -159,7 +175,7 @@
             data-caption="Norsk Finsk Museum" 
             class="card grid-col-span-2 grid-row-span-1 norskFinskMuseum">
           <div class="card__img">
-            <img src="/assets/Images/Home/NorskSkogsfinsk02_thumb.jpg" alt="NorskSkogsfinsk02" >
+            <img data-src="/assets/Images/Home/NorskSkogsfinsk02_thumb.jpg" alt=" " loading="lazy">
           </div>
           <div class="card__text">
             <h3> Norsk Finsk Museum </h3>
@@ -171,7 +187,7 @@
         data-caption="Apartment Fredhäll"  
         class="card grid-col-span-2 grid-row-span-3 apartmentFredhall">
           <div class="card__img">
-            <img src="/assets/Images/Home/ApartmentFredhall04_thumb.jpg" alt="Apartment Fredhäll">
+            <img data-src="/assets/Images/Home/ApartmentFredhall04_thumb.jpg" alt=" " loading="lazy">
           </div>
           <div class="card__text">
             <h3> Apartment Fredhäll </h3>
@@ -182,7 +198,7 @@
       data-caption="Norsk Skogsfinsk Museum" 
       class="card grid-col-span-4 grid-row-span-1 norskFinskMuseum">
         <div class="card__img">
-          <img src="/assets/Images/Home/NorskSkogsfinsk03_thumb.jpg" alt="Norsk Skogsfinsk" >
+          <img data-src="/assets/Images/Home/NorskSkogsfinsk03_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Norsk Skogsfinsk Museum </h3>
@@ -193,7 +209,7 @@
       data-caption="Rogaland Husby" 
       class="card grid-col-span-4 grid-row-span-3 rogalandHusby">
         <div class="card__img">
-          <img src="/assets/Images/Home/Rogaland01_thumb.jpg" alt="Rogaland Husby" >
+          <img data-src="/assets/Images/Home/Rogaland01_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Rogaland Husby </h3>
@@ -204,7 +220,7 @@
       data-caption="Kv Autogyron 3" 
       class="card grid-col-span-2 grid-row-span-1 autogyron">
         <div class="card__img">
-          <img src="/assets/Images/Home/Autogyron02_thumb.jpg" alt="Kv Autogyron 3" >
+          <img data-src="/assets/Images/Home/Autogyron02_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Kv Autogyron 3 </h3>
@@ -215,7 +231,7 @@
       data-caption="Kv Autogyron 3" 
       class="card grid-col-span-4 grid-row-span-2 autogyron">
         <div class="card__img">
-          <img src="/assets/Images/Home/Autogyron01_thumb.jpg" alt="Kv Autogyron 3" >
+          <img data-src="/assets/Images/Home/Autogyron01_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Kv Autogyron 3 </h3>
@@ -226,7 +242,7 @@
       data-caption="Villa Concept" 
       class="card grid-col-span-2 grid-row-span-1 conceptVilla">
         <div class="card__img">
-          <img src="/assets/Images/Home/VillaConcept02_thumb.jpg" alt="Villa concept" >
+          <img data-src="/assets/Images/Home/VillaConcept02_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Villa Concept </h3>
@@ -237,7 +253,7 @@
       data-caption="Barkarbystaden Kv 15"
       class="card grid-col-span-2 grid-row-span-3 barkaby">
         <div class="card__img">
-          <img class="img" src="/assets/Images/Home/Barkaby-HIGH-099_thumb.jpg" alt="Barkarbystaden Kv 15" >
+          <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-099_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Barkarbystaden Kv 15 </h3>
@@ -248,7 +264,7 @@
       data-caption="Älta Nacka Competition" 
       class="card grid-col-span-4 grid-row-span-2 altaNacka">
         <div class="card__img">
-          <img src="/assets/Images/Home/Alta02_thumb.jpg" alt="Älta Nacka Competition" >
+          <img data-src="/assets/Images/Home/Alta02_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Älta Nacka Competition </h3>
@@ -259,7 +275,7 @@
       data-caption="Concrete printed housing"
       class="card grid-col-span-2 grid-row-span-1 concretePrint">
         <div class="card__img">
-          <img class="img" src="/assets/Images/Home/ConcretePrint1_thumb.jpg" alt="Concrete printed housing">
+          <img class="img" data-src="/assets/Images/Home/ConcretePrint1_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Concrete printed housing </h3>
@@ -270,7 +286,7 @@
       data-caption="Barkarbystaden Kv 15"
       class="card grid-col-span-4 grid-row-span-1 barkaby">
         <div class="card__img">
-          <img class="img" src="/assets/Images/Home/Barkaby-HIGH-128_thumb.jpg" alt="Barkarbystaden Kv 15" >
+          <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-128_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Barkarbystaden Kv 15 </h3>
@@ -281,7 +297,7 @@
       data-caption="Rogaland Husby" 
       class="card grid-col-span-4 grid-row-span-1 rogalandHusby">
         <div class="card__img">
-          <img src="/assets/Images/Home/Rogaland02_thumb.jpg" alt="Rogaland Husby" >
+          <img data-src="/assets/Images/Home/Rogaland02_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Rogaland Husby </h3>
@@ -292,7 +308,7 @@
       data-caption="Norsk Skogsfinsk Museum" 
       class="card grid-col-span-2 grid-row-span-1 norskFinskMuseum">
         <div class="card__img">
-          <img src="/assets/Images/Home/NorskSkogsfinsk01_thumb.jpg" alt="Norsk Skogsfinsk" >
+          <img data-src="/assets/Images/Home/NorskSkogsfinsk01_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Norsk Skogsfinsk Museum </h3>
@@ -304,7 +320,7 @@
       data-caption="Interior - Table" 
       class="card grid-col-span-2 grid-row-span-1 norskFinskMuseum table">
         <div class="card__img">
-          <img src="/assets/Images/Home/Table01_thumb.jpg" alt="Interior - Table" >
+          <img data-src="/assets/Images/Home/Table01_thumb.jpg" alt=" " >
         </div>
         <div class="card__text">
           <h3> Table </h3>
@@ -315,7 +331,7 @@
       data-caption="Barkarbystaden Kv 15"
       class="card grid-col-span-4 grid-row-span-2 barkaby">
         <div class="card__img">
-          <img class="img" src="/assets/Images/Home/Barkaby-HIGH-049_thumb.jpg" alt="Barkarbystaden Kv 15" >
+          <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-049_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Barkarbystaden Kv 15 </h3>
@@ -326,7 +342,7 @@
       data-caption="Mobile Sauna" 
       class="card grid-col-span-2 grid-row-span-2 mobileSauna">
         <div class="card__img">
-          <img src="/assets/Images/Home/mobilesauna5_thumb.jpg" alt="Mobile Sauna" >
+          <img data-src="/assets/Images/Home/mobilesauna5_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Mobile Sauna </h3>
@@ -337,7 +353,7 @@
       data-caption="Co-housing Concept"
       class="card grid-col-span-2 grid-row-span-1 cohousingConcept">
         <div class="card__img">
-          <img class="img" src="/assets/Images/Home/CoHousing01_thumb.jpg" alt="Co-housing Concept">
+          <img class="img" data-src="/assets/Images/Home/CoHousing01_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Co-housing Concept </h3>
@@ -348,7 +364,7 @@
       data-caption="Barkarbystaden Kv 15"
       class="card grid-col-span-2 grid-row-span-2 barkaby">
         <div class="card__img">
-          <img class="img" src="/assets/Images/Home/Barkaby-HIGH-114_thumb.jpg" alt="Barkarbystaden Kv 15" >
+          <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-114_thumb.jpg" alt=" " loading="lazy" >
         </div>
         <div class="card__text">
           <h3> Barkarbystaden Kv 15 </h3>
@@ -359,7 +375,7 @@
       data-caption="Mobile Sauna" 
       class="card grid-col-span-4 grid-row-span-1 mobileSauna">
         <div class="card__img">
-          <img src="/assets/Images/Home/mobilesauna6_thumb.jpg" alt="Mobile Sauna" >
+          <img data-src="/assets/Images/Home/mobilesauna6_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Mobile Sauna </h3>
@@ -370,7 +386,7 @@
       data-caption="Stable Alotments" 
       class="card grid-col-span-2 grid-row-span-1 stableAlotments">
         <div class="card__img">
-          <img src="/assets/Images/Home/StableAlotments01.jpg" alt="Stable Alotments" >
+          <img data-src="/assets/Images/Home/StableAlotments01.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Stable Alotments </h3>
@@ -381,7 +397,7 @@
       data-caption="Väsjön"
       class="card grid-col-span-4 grid-row-span-1 vasjon" >
         <div class="card__img">
-          <img src="/assets/Images/Home/Vasjon02_thumb.jpg" alt="Väsjön">
+          <img data-src="/assets/Images/Home/Vasjon02_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Väsjön </h3>
@@ -394,7 +410,7 @@
       data-caption="Barkarbystaden Kv 15"
       class="card grid-col-span-4 grid-row-span-2 barkaby">
         <div class="card__img">
-          <img class="img" src="/assets/Images/Home/Barkaby-HIGH-006_thumb.jpg" alt="Barkarbystaden Kv 15" >
+          <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-006_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Barkarbystaden Kv 15 </h3>
@@ -406,7 +422,7 @@
       data-caption="Pavillion Djuprora" 
       class="card grid-col-span-2 grid-row-span-1 pavillionDjuprora">
         <div class="card__img">
-          <img src="/assets/Images/Home/Djuprora01_thumb.jpg" alt="Pavillion Djupröra" >
+          <img data-src="/assets/Images/Home/Djuprora01_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Pavillion Djupröra </h3>
@@ -417,7 +433,7 @@
       data-caption="Interior | Lamp"
       class="card grid-col-span-2 grid-row-span-2 lamp">
         <div class="card__img">
-          <img class="img" src="/assets/Images/Home/10Lamp1_thumb.jpg" alt="Interior | Lamp">
+          <img class="img" data-src="/assets/Images/Home/10Lamp1_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Interior | Lamp </h3>
@@ -428,7 +444,7 @@
       data-caption="Barkarbystaden Kv 15"
       class="card grid-col-span-2 grid-row-span-1 barkaby">
         <div class="card__img">
-          <img class="img" src="/assets/Images/Home/Barkaby-HIGH-066_thumb.jpg" alt="Barkarbystaden Kv 15" >
+          <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-066_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Barkarbystaden Kv 15 </h3>
@@ -440,7 +456,7 @@
       data-caption="Co-housing Concept"
       class="card grid-col-span-2 grid-row-span-1 cohousingConcept">
         <div class="card__img">
-          <img class="img" src="/assets/Images/Home/CoHousing05_thumb.jpg" alt="Co-housing Concept">
+          <img class="img" data-src="/assets/Images/Home/CoHousing05_thumb.jpg" alt=" " loading="lazy">
         </div>
         <div class="card__text">
           <h3> Co-housing Concept </h3>

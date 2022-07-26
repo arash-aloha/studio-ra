@@ -6,3 +6,6 @@
 .fancybox__backdrop {
   background-color: rgba(255,255,255, 0.98) !important; /* <<-- this one  */
 }
+.fancybox__spinner {
+  color: var(--clr-black) !important; 
+}

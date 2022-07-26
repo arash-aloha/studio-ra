@@ -1,29 +1,45 @@
-// fade in hero 
+// // fade in hero 
 const heroImg = document.getElementById("heroImg");
 const heroText = document.getElementById("heroText");
 const homePage = document.querySelector(".home");
 const homeWrapper = document.querySelector(".home-wrapper");
 
-
-const checkFirstVisit = () => {
-  if(document.cookie.indexOf('mycookie')==-1) {
-    // cookie doesn't exist, create it now    
+const firstTime = localStorage.getItem("first_time");
+if(!firstTime) {
+    // first time loaded!
+    localStorage.setItem("first_time","1");
     setTimeout(displayHome, 1200);
     setTimeout(displayImg, 1200);
     setTimeout(displayWrapper, 1600);
     setTimeout(displayScrollText, 1900);
-    document.cookie = 'mycookie=1';
-  }
-  else {
-    // not first visit, do nothing
-    setTimeout(displayHome, 0);
-    setTimeout(displayImg, 0);
-    setTimeout(displayWrapper, 0);
-    setTimeout(displayScrollText, 0);
-  }
+} else {
+      // not first visit, do nothing
+      setTimeout(displayHome, 0);
+      setTimeout(displayImg, 0);
+      setTimeout(displayWrapper, 0);
+      setTimeout(displayScrollText, 0);
 }
 
-checkFirstVisit();
+// const checkFirstVisit = () => {
+  
+//   if(document.cookie.indexOf('mycookie')==-1) {
+//     // cookie doesn't exist, create it now    
+//     setTimeout(displayHome, 1200);
+//     setTimeout(displayImg, 1200);
+//     setTimeout(displayWrapper, 1600);
+//     setTimeout(displayScrollText, 1900);
+//     document.cookie = 'mycookie=1';
+//   }
+//   else {
+//     // not first visit, do nothing
+//     setTimeout(displayHome, 0);
+//     setTimeout(displayImg, 0);
+//     setTimeout(displayWrapper, 0);
+//     setTimeout(displayScrollText, 0);
+//   }
+// }
+
+// checkFirstVisit();
 
 function displayWrapper() {
   homeWrapper.style.opacity = 1;
