@@ -1,6 +1,6 @@
 const barkaby = [
   {
-    src: '../assets/Images/Work/Barkarbystaden_Kv_15/07-Barkarbystden-red.jpg',
+    src: '../assets/Images/Work/Barkarbystaden_Kv_15/07-Barkarbystden-red_thumb.jpg',
     caption : 'Barkarbystaden Kv 15',
     thumb   : '../assets/Images/Work/Barkarbystaden_Kv_15/07-Barkarbystden-red_thumb.jpg',
     type: "image",

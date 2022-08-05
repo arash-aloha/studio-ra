@@ -43,13 +43,17 @@ if(!firstTime) {
 
 function displayWrapper() {
   homeWrapper.style.opacity = 1;
+  homeWrapper.style.transition = "opacity 1.1s linear"
 }
 function displayHome() {
   homePage.style.opacity = 1;
+  homePage.style.transition = "opacity 1.1s linear"
 }
 function displayImg() {
   heroImg.style.opacity = 1;
+  heroImg.style.transition = "opacity 0.9s linear";
 }
 function displayScrollText() {
   heroText.style.opacity = 1;
+  heroText.style.transition = "opacity 1.5s linear";
 }

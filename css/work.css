@@ -56,17 +56,17 @@
   height: 100%;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 1s, opacity 1s linear;
+  transition: visibility 0.35s, opacity 0.35s linear;
 }
 .workItemImageContainer.active {
   visibility: visible;
   opacity: 1;
-  transition: opacity 1s linear;
+  transition: opacity 0.35s linear;
 }
 .workItemImageContainer.fade {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 1s, opacity 1s linear;
+  transition: visibility 0s 0.35s, opacity 0.35s linear;
 }
 .workItemImageContainer img {
   width: 100%;
