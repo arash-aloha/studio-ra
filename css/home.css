@@ -116,7 +116,7 @@ footer {
     margin: 0 auto;
   }
   .primary-header {
-    margin: 6rem 1rem;
+    margin: 3rem 1rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -130,7 +130,7 @@ footer {
     -ms-transform:rotate(180deg);
     transform: rotate(180deg);
 
-    margin-right: 6rem;
+    margin-right: 3rem;
     position: relative;
   }
   .primary-navigation li a {
@@ -189,17 +189,15 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 30rem;
   }
   
-  
   /* grid */
-
   .home__grid {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(6, 1fr);
   }
-
   .grid-col-span-1 {
     grid-column: span 1;
   }
@@ -256,19 +254,7 @@ footer {
     cursor: pointer;
     transition: .5s ease-in-out;
   }
-  
 
-
-  /* lines */
-  /* .card::before,
-  .card::after {
-    content: "";
-    position: absolute;
-    top: 1.25rem;
-    bottom: 1.25rem;
-    left: 1.25rem;
-    right: 1.25rem;
-  } */
   .card::before {
     transform: scale(0, 1);
     transition: transform ease-out 300ms;
@@ -287,53 +273,9 @@ footer {
   .card:hover::after {
     transform: scale(1, 1.03);
   }
-
-  /* focal transition */
-  .card:hover .card__img img {
-    transform: scale(1.2);
-  }
   .card:hover .card__img {
     opacity: 0.4;
   }
-  .card__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--clr-black);
-    opacity: 0;
-    transition: opacity ease-out 250ms;
-    font-family: "mainLight";
-    font-size: .75rem;
-    width: 100%;
-    text-align: center;
-  }
-  .card:hover .card__text {
-    opacity: 1;
-  }
-
-
-  /*********** alt msnry **************/
-  /* remove hight on C */
-  
-  /* .projects-container {
-    display: flex; 
-  }
-  .home__grid {
-    column-count: 4;
-    column-gap: 0.5rem;
-    margin: 1.5em auto;
-  }
-  
-  .card {
-    background-color: #eee;
-    display: inline-block;
-    margin: 0 0 1rem;
-    width: 100%;
-  } 
-  */
-
-  
   #mailto {
     cursor: pointer;
   }
