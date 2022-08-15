@@ -23,6 +23,9 @@
     <script defer src="../../js/script.js"></script>
     <script defer src="../../js/workItems.js"></script>
 
+    <!-- slider -->
+    <script defer src="../../slider/ConceptVilla.js"></script>
+
     <title>Studio Rå | Concept for a villa</title>
   </head>
   <body class="work-items-body">
@@ -50,27 +53,27 @@
       </nav>
 
     <section class="project-wrapper">
-      <div class="work-item-description">
-        <h5>Concept for a villa</h5>
-        <p>Housing 150 m²</p>
-        <p>Enköping 2021</p>
-        <p>Insipprad by the symmetrical plans of Palladio this villa is based on a 900-grid and fluid movements. No interior walls are touching the facade, allowing the user to move freely around the windows of the building.</p>
-      </div>
       <div class="itemImagesContainer">
-        <div class="thumbs">
-          <img src="/assets/Images/Work/Conceptforavilla/VillaConcept01_thumb.webp" alt="thumb1" />
-          <img src="/assets/Images/Work/Conceptforavilla/VillaConcept02_thumb.webp" alt="thumb2" />
-          <img src="/assets/Images/Work/Conceptforavilla/VillaConcept03_thumb.webp" alt="thumb3" />
-          <img src="/assets/Images/Work/Conceptforavilla/VillaConcept04_thumb.webp" alt="thumb4" />
+        
+        <span id="prevBtn" class="arrow prev"> <i class="bi bi-caret-left"></i> </span>
+
+        <div class="carouselContainer">
+          <img id="targetImage" class="sliderImage" src="/assets/Images/Work/Conceptforavilla/VillaConcept01_thumb.webp" alt=" " />
         </div>
         
-        <div class="lg-image-container">
-          <img src="/assets/Images/Work/Conceptforavilla/VillaConcept01_thumb.webp" alt="thumb1" />
-        </div>
-        <a href="../work.html">
-          <span class="icon-back"><i class="bi bi-arrow-return-left"></i></span>
-        </a>
+        <span id="nextBtn" class="arrow next"> <i class="bi bi-caret-right"></i> </span>
+
       </div>
+      <div class="work-item-description">
+        <h5><b>Concept for a villa</b></h5>
+        <p><b>Size </b>Housing 150 m²</p>
+        <p><b>Location </b>Enköping 2021</p>
+        <p><b>Info </b>Insipprad by the symmetrical plans of Palladio this villa is based on a 900-grid and fluid movements. No interior walls are touching the facade, allowing the user to move freely around the windows of the building.</p>
+      </div>
+      
+      <a id="back-btn">
+        <span class="icon-back"><i class="bi bi-arrow-return-left"></i></span>
+      </a>
     </section>
   </main>
 </body>

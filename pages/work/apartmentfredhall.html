@@ -50,28 +50,27 @@
       </nav>
 
     <section class="project-wrapper">
-      <div class="work-item-description">
-        <h5>Apartment Fredhäll</h5>
-        <p>Interior design 29 m²</p>
-        <p>Fredhäll, Stockholm 2020</p>
-        <p>Apartment renovation</p>
-      </div>
-      <div class="itemImagesContainer">
-        <div class="thumbs">
-          <img src="/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall01_tumb.webp" alt="thumb1" />
-          <img src="/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall02_thumb.webp" alt="thumb2" />
-          <img src="/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall03_thumb.webp" alt="thumb3" />
-          <img src="/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall04_thumb.webp" alt="thumb4" />
+       
+      <div class="itemImagesContainer">  
+        <span id="prevBtn" class="arrow prev"> <i class="bi bi-caret-left"></i> </span>
 
+        <div class="carouselContainer">
+          <img id="targetImage" class="sliderImage" src="/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall04_thumb.webp" alt="thumb4" />
         </div>
-        
-        <div class="lg-image-container">
-          <img src="/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall04_thumb.webp" alt="thumb4" />
-        </div>
-        <a href="../work.html">
-          <span class="icon-back"><i class="bi bi-arrow-return-left"></i></span>
-        </a>
+
+        <span id="nextBtn" class="arrow next"> <i class="bi bi-caret-right"></i> </span>  
       </div>
+
+      <div class="work-item-description">
+        <h5><b>Apartment Fredhäll</b></h5>
+        <p><b>Size </b>Interior design 29 m²</p>
+        <p><b>Location </b>Fredhäll, Stockholm 2020</p>
+        <p><b>Info </b>Apartment renovation</p>
+      </div>
+      
+      <a id="back-btn">
+        <span class="icon-back"><i class="bi bi-arrow-return-left"></i></span>
+      </a>
     </section>
   </main>
 </body>

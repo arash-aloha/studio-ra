@@ -60,7 +60,7 @@ body {
   gap: 2em;
   list-style: none;
   position: relative;
-  font-size: .75rem;
+  font-size: .55rem;
   display: flex;
 }
 a {
@@ -189,7 +189,15 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  .projects-container, 
+  .work-container,
+  .about-container,
+  .contact-container,
+  .project-wrapper {
     width: 30rem;
+    margin-bottom: 3rem;
   }
   
   /* grid */
@@ -294,7 +302,7 @@ footer {
   .primary-header {
     position: fixed;
     top: 0;
-    width: 100%;
+    inset: 0 0.2rem 0 0.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -372,15 +380,12 @@ footer {
     transition: all 350ms ease-in-out;
     background-color: var(--clr-black);
   }
-  .menu-bar.top {
-    margin-inline-start: 20px;
-  }
   .mobile-nav-toggle.active .menu-bar:nth-child(1) {
-    transform: translateY(8px) translateX(-18px) rotate(-45deg);
+    transform: translateY(8px) translateX(7px) rotate(-45deg);
     width: 1.1rem;
   }
   .mobile-nav-toggle.active .menu-bar:nth-child(2) {
-    transform: translateY(0px) translateX(-3px) rotate(45deg);
+    transform: translateY(1px) translateX(8px) rotate(45deg);
     width: 1.1rem;
   }
   .main-container {

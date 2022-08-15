@@ -23,6 +23,9 @@
     <script defer src="../../js/script.js"></script>
     <script defer src="../../js/workItems.js"></script>
 
+    <!-- slider -->
+    <script defer src="../../slider/Vasjon.js"></script>
+
     <title>Studio Rå | Väsjön Torg</title>
   </head>
   <body class="work-items-body">
@@ -50,26 +53,27 @@
       </nav>
 
     <section class="project-wrapper">
-      <div class="work-item-description">
-        <h5>Väsjön Torg</h5>
-        <p>8440 m² Väsjön, Sollentuna kommun</p>
-        <p>Housing, retail.<br/></p>
-        <p>Competition entry for a housing block in wood in Väsjön, Sollentuna kommun.</p>
-      </div>
       <div class="itemImagesContainer">
-        <div class="thumbs">
-          <img src="/assets/Images/Work/Vasjon/Vasjon01_thumb.webp" alt="thumb1" />
-          <img src="/assets/Images/Work/Vasjon/Vasjon02_thumb.webp" alt="thumb2" />
-          <img src="/assets/Images/Work/Vasjon/Vasjon03_thumb.webp" alt="thumb3" />
-          <img src="/assets/Images/Work/Vasjon/Vasjon04_thumb.webp" alt="thumb4" />
-          <img src="/assets/Images/Work/Vasjon/Vasjon05_thumb.webp" alt="thumb5" />
+        
+        <span id="prevBtn" class="arrow prev"> <i class="bi bi-caret-left"></i> </span>
+
+        <div class="carouselContainer">
+          <img id="targetImage" class="sliderImage" src="/assets/Images/Work/Vasjon/Vasjon01_thumb.webp" alt=" " />
         </div>
         
-        <div class="lg-image-container"><img src="/assets/Images/Work/Vasjon/Vasjon01_thumb.webp" alt="thumb1" /></div>
-        <a href="../work.html">
-          <span class="icon-back"><i class="bi bi-arrow-return-left"></i></span>
-        </a>
+        <span id="nextBtn" class="arrow next"> <i class="bi bi-caret-right"></i> </span>
       </div>
+
+      <div class="work-item-description">
+          <h5><b>Väsjön Torg</b></h5>
+          <p><b>Size </b>Housing and retail 8440 m²</p>
+          <p><b>Location </b>Väsjön, Sollentuna kommun</p>
+          <p><b>Info </b>Competition entry for a housing block in wood in Väsjön, Sollentuna kommun.</p>
+        </div>
+
+      <a id="back-btn">
+        <span class="icon-back"><i class="bi bi-arrow-return-left"></i></span>
+      </a>
     </section>
   </main>
 </body>

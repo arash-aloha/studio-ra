@@ -23,6 +23,10 @@
     <!-- js -->
     <script defer src="../../js/script.js"></script>
     <script defer src="../../js/workItems.js"></script>
+    
+    <!-- slider -->
+    <script defer src="../../slider/Barkaby.js"></script>
+    
 
     <title>Studio Rå | Barkarbystaden Kv 15</title>
   </head>
@@ -51,42 +55,27 @@
       </nav>
 
     <section class="project-wrapper">
+      
+      <div class="itemImagesContainer">  
+        <span id="prevBtn" class="arrow prev"> <i class="bi bi-caret-left"></i> </span>
+        
+        <div class="carouselContainer">
+          <img id="targetImage" class="sliderImage" src="/assets/Images/Work/Barkarbystaden_Kv_15/07-Barkarbystden-red_thumb.webp" alt=" " />
+        </div>  
+        <span id="nextBtn" class="arrow next"> <i class="bi bi-caret-right"></i> </span>
+      </div>
+      
       <div class="work-item-description">
-        <h5>Barkarbystaden Kv 15</h5>
-        <p>Housing / Retail 25 000 m² / 351 apartments</p>
-        <p>Barkarbystaden, Järfälla 2019-2022</p>
-        <p>Sveaviken Bostad / Moko / Arkitekterna Krook & Tjäder</p>
-        <p>Housing block in the urban development of Barkarbystaden outside Stockholm.</p>
+        <h5><b>Barkarbystaden Kv 15</b></h5>
+        <p><b>Size </b>Housing / Retail 25 000 m² / 351 apartments</p>
+        <p><b>Location </b>Barkarbystaden, Järfälla 2019-2022</p>
+        <p><b>Info </b>Housing block in the urban development of Barkarbystaden outside Stockholm</p>
+        <p>Sveaviken Bostad / Moko / Arkitekterna Krook & Tjäder.</p>
       </div>
-      <div class="itemImagesContainer">
-        <div class="thumbs">
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/07-Barkarbystden-red_thumb.webp" alt="thumb1" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/16-Barkarbystaden15-3_thumb.webp" alt="thumb2" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-006_thumb.webp" alt="thumb3" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-049_thumb.webp" alt="thumb4" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-058_thumb.webp" alt="thumb5" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-065_thumb.webp" alt="thumb6" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-066_thumb.webp" alt="thumb7" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-099_thumb.webp" alt="thumb8" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-101_thumb.webp" alt="thumb9" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-105_thumb.webp" alt="thumb10" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-107_thumb.webp" alt="thumb11" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-108_thumb.webp" alt="thumb12" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-111_thumb.webp" alt="thumb13" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-113_thumb.webp" alt="thumb14" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-114_thumb.webp" alt="thumb15" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-122_thumb.webp" alt="thumb16" />
-          <img src="/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-128_thumb.webp" alt="thumb17" />
-        </div>
-        
-        <div class="lg-image-container">
-          <img id="targetImage" src="/assets/Images/Work/Barkarbystaden_Kv_15/07-Barkarbystden-red_thumb.webp" alt="thumb1" />
-        </div>
-        
-        <a href="../work.html">
-          <span class="icon-back"><i class="bi bi-arrow-return-left"></i></span>
-        </a>
-      </div>
+
+      <a id="back-btn">
+        <span class="icon-back"><i class="bi bi-arrow-return-left"></i></span>
+      </a>
     </section>
   </main>
 </body>

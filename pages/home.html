@@ -11,10 +11,6 @@
   <link rel="preload" href="../assets/fonts/basis-grotesque-pro-cufonfonts/BasisGrotesquePro-Light.ttf" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/fonts.css">
 
-  <!-- <noscript>
-    <link rel="stylesheet" href="../css/fonts.css">
-  </noscript> -->
-
   <!-- CSS -->
   <link rel="preload" href="../css/home.css" as="style"
   onload="this.onload=null;this.rel='stylesheet'">
@@ -30,34 +26,8 @@
   <script defer src="../js/observe.js"></script>
   <script defer src="../js/initiateHomepage.js"></script>
   
-  <!-- fancybox and bootstrap -->
-  <link rel="stylesheet" href="../css/fancylightbox.css">
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-  <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script defer src="https://code.jquery.com/jquery-3.6.0.slim.js"  integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 
-  <!-- lightbox/fancybox images -->
-   <script defer src="../lightbox/ApartmentFredhall.js"></script>
-   <script defer src="../lightbox/Autogyron.js"></script>
-   <script defer src="../lightbox/Barkaby.js"></script>
-   <script defer src="../lightbox/CoHousingConcept.js"></script>
-   <script defer src="../lightbox/ConceptVilla.js"></script>
-   <script defer src="../lightbox/ConceptualInterior.js"></script>
-   <script defer src="../lightbox/ConcretePrint.js"></script>
-   <script defer src="../lightbox/Folkungavallen.js"></script>
-   <script defer src="../lightbox/Lamp.js"></script>
-   <script defer src="../lightbox/MobileSauna.js"></script>
-   <script defer src="../lightbox/ModuleHousing.js"></script>
-   <script defer src="../lightbox/NorskFinskMuseum.js"></script>
-   <script defer src="../lightbox/PavillionDjuprora.js"></script>
-   <script defer src="../lightbox/Portkvarteren.js"></script>
-   <script defer src="../lightbox/RogalandHusby.js"></script>
-   <script defer src="../lightbox/Sockerstaden.js"></script>
-   <script defer src="../lightbox/StableAlotments.js"></script>
-   <script defer src="../lightbox/Table.js"></script>
-   <script defer src="../lightbox/Vasjon.js"></script>
-   
   <title> Studio Rå </title>
 </head>
 
@@ -94,281 +64,272 @@
       <section class="mobile-hero">
         <div id="heroImg-container">
           <img id="heroImg" src="/assets/Images/Home/ConcretePrint1_thumb.webp" alt=" ">
-        </div>
-          
+        </div>      
         <a id="heroText" href="#home_start"><span class="icon-down"><i class="bi bi-chevron-compact-down"></i></span>
         <p class="mobile-hero-text"> Scroll down </p>
         </a>
-        
       </section>
 
       <div class="home__grid" id="home_start">
+        <a href="../pages/work/conceptforavilla.html"
+          data-caption="Concept for a Villa" 
+          class="card grid-col-span-2 grid-row-span-1 conceptVilla">
+          <div class="card__img">
+            <img class="img" src="/assets/Images/Home/VillaConcept01.webp" alt=" "  >
+          </div>
+        </a>
+
+        <a href="../pages/work/barkarbystadenkv15.html"
+          data-caption="Barkarbystaden Kv 15"
+          class="card grid-col-span-4 grid-row-span-2 barkaby">
+          <div class="card__img">
+            <img class="img" src="/assets/Images/Home/Barkaby-HIGH-105_thumb.webp" alt=" " 
+            >
+          </div>
+        </a>
+
+        <a href="../pages/work/vasjontorg.html"  
+          data-caption="Väsjön"
+          class="card grid-col-span-2 grid-row-span-2 vasjon" >
+          <div class="card__img">
+            <img src="/assets/Images/Home/Vasjon01_thumb.webp" alt=" "  >
+          </div>
+        </a>
+
+        <a href="../pages/work/conceptforavilla.html"
+          data-caption="Villa Concept" 
+          class="card grid-col-span-2 grid-row-span-1 conceptVilla">
+          <div class="card__img">
+            <img src="/assets/Images/Home/VillaConcept03.webp" alt=" "
+            >
+          </div>
+        </a>
+
+        <a href="../pages/work/folkkungavallen.html" 
+          data-caption="Folkungavallen Linköping"  
+          class="card grid-col-span-2 grid-row-span-2 folkavallen">
+          <div class="card__img">
+            <img src="/assets/Images/Home/linkoping_gatuperspektiv_thumb.webp" alt=" " >
+          </div>
+        </a>
+        
+        <a href="../pages/work/mobilesauna.html"
+          data-caption="Mobile Sauna" 
+          class="card grid-col-span-4 grid-row-span-2 mobileSauna">
+          <div class="card__img">
+            <img src="/assets/Images/Home/mobilesauna1_thumb.webp" alt=" " >
+          </div>
+        </a>
+
+        <a href="../pages/work/norskfinskmuseum.html"
+          data-caption="Norsk Finsk Museum" 
+          class="card grid-col-span-2 grid-row-span-1 norskFinskMuseum">
+          <div class="card__img">
+            <img data-src="/assets/Images/Home/NorskSkogsfinsk02_thumb.webp" alt=" " >
+          </div>
+        </a>
+        
+        <a href="../pages/work/norskfinskmuseum.html"
+          data-caption="Norsk Skogsfinsk Museum" 
+          class="card grid-col-span-4 grid-row-span-1 norskFinskMuseum">
+            <div class="card__img">
+              <img data-src="/assets/Images/Home/NorskSkogsfinsk03_thumb.webp" alt=" " >
+            </div>
+          </a>
+
+        <a href="../pages/work/apartmentfredhall.html"
+          data-caption="Apartment Fredhäll"  
+          class="card grid-col-span-2 grid-row-span-3 apartmentFredhall">
+            <div class="card__img">
+              <img data-src="/assets/Images/Home/ApartmentFredhall04_thumb.webp" alt=" " >
+            </div>
+        </a>
+
+        <a href="../pages/work/rogalundhusby.html"
+          data-caption="Rogaland Husby" 
+          class="card grid-col-span-4 grid-row-span-3 rogalandHusby">
+          <div class="card__img">
+            <img data-src="/assets/Images/Home/Rogaland01_thumb.webp" alt=" " >
+          </div>
+        </a>
+
+        <a href="../pages/work/autogyron.html"
+          data-caption="Kv Autogyron 3" 
+          class="card grid-col-span-2 grid-row-span-1 autogyron">
+          <div class="card__img">
+            <img data-src="/assets/Images/Home/Autogyron02_thumb.webp" alt=" " >
+          </div>
+        </a>
+
+        <a href="../pages/work/autogyron.html"
+        data-caption="Kv Autogyron 3" 
+        class="card grid-col-span-4 grid-row-span-2 autogyron">
+          <div class="card__img">
+            <img data-src="/assets/Images/Home/Autogyron01_thumb.webp" alt=" " >
+          </div>
+        </a>
+
+        <a href="../pages/work/conceptforavilla.html"
+          data-caption="Villa Concept" 
+          class="card grid-col-span-2 grid-row-span-1 conceptVilla">
+          <div class="card__img">
+            <img data-src="/assets/Images/Home/VillaConcept02_thumb.webp" alt=" " >
+          </div>
+        </a>
+        
+        <a href="../pages/work/barkarbystadenkv15.html"
+        data-caption="Barkarbystaden Kv 15"
+        class="card grid-col-span-2 grid-row-span-3 barkaby">
+          <div class="card__img">
+            <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-099_thumb.webp" alt=" " >
+          </div>
+        </a>
+
+        <a href="../pages/work/altacompetition.html"
+        data-caption="Älta Nacka Competition" 
+        class="card grid-col-span-4 grid-row-span-2 altaNacka">
+          <div class="card__img">
+            <img data-src="/assets/Images/Home/Alta02_thumb.webp" alt=" " >
+          </div>
+        </a>
         
 
-      <div
-        data-caption="Concept for a Villa" 
-        class="card grid-col-span-2 grid-row-span-1 conceptVilla">
-        <div class="card__img">
-          <img class="img" src="/assets/Images/Home/VillaConcept01.webp" alt=" "  >
-        </div>
-      </div>
+        <a href="../pages/work/concretePrintedHousing.html"
+        data-caption="Concrete printed housing"
+        class="card grid-col-span-2 grid-row-span-1 concretePrint">
+          <div class="card__img">
+            <img class="img" data-src="/assets/Images/Home/ConcretePrint1_thumb.webp" alt=" " >
+          </div>
+        </a>
+        
+        <a href="../pages/work/barkarbystadenkv15.html"
+        data-caption="Barkarbystaden Kv 15"
+        class="card grid-col-span-4 grid-row-span-1 barkaby">
+          <div class="card__img">
+            <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-128_thumb.webp" alt=" " >
+          </div>
+        </a>
 
-      <div
+        <div
+        data-caption="Rogaland Husby" 
+        class="card grid-col-span-4 grid-row-span-1 rogalandHusby">
+          <div class="card__img">
+            <img data-src="/assets/Images/Home/Rogaland02_thumb.webp" alt=" " >
+          </div>
+        </div>
+
+        <div
+        data-caption="Norsk Skogsfinsk Museum" 
+        class="card grid-col-span-2 grid-row-span-1 norskFinskMuseum">
+          <div class="card__img">
+            <img data-src="/assets/Images/Home/NorskSkogsfinsk01_thumb.webp" alt=" " >
+          </div>
+        </div>
+
+
+        <a href="../pages/work/norskfinskmuseum.html"
+        data-caption="Interior - Table" 
+        class="card grid-col-span-2 grid-row-span-1 norskFinskMuseum table">
+          <div class="card__img">
+            <img data-src="/assets/Images/Home/Table01_thumb.webp" alt=" " >
+          </div>
+        </a>
+
+        <a href="../pages/work/barkarbystadenkv15.html"
         data-caption="Barkarbystaden Kv 15"
         class="card grid-col-span-4 grid-row-span-2 barkaby">
-        <div class="card__img">
-          <img class="img" src="/assets/Images/Home/Barkaby-HIGH-105_thumb.webp" alt=" " 
-          >
-        </div>
-      </div>
+          <div class="card__img">
+            <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-049_thumb.webp" alt=" " >
+          </div>
+        </a>
 
-      <div  
-        data-caption="Väsjön"
-        class="card grid-col-span-2 grid-row-span-2 vasjon" >
-        <div class="card__img">
-          <img src="/assets/Images/Home/Vasjon01_thumb.webp" alt=" "  >
-        </div>
-      </div>
+        <a href="../pages/work/modulehousing.html"
+        data-caption="Module Houseing" 
+        class="card grid-col-span-2 grid-row-span-2 moduleHousing">
+          <div class="card__img">
+            <img data-src="/assets/Images/Home/ModuleHousing01_thumb.webp" alt=" " >
+          </div>
+        </a>
 
-      <div
-        data-caption="Villa Concept" 
-        class="card grid-col-span-2 grid-row-span-1 conceptVilla">
-        <div class="card__img">
-          <img src="/assets/Images/Home/VillaConcept03.webp" alt=" "
-           >
-        </div>
-      </div>
+        <a href="../pages/work/cohousingconcept.html"
+        data-caption="Co-housing Concept"
+        class="card grid-col-span-2 grid-row-span-1 cohousingConcept">
+          <div class="card__img">
+            <img class="img" data-src="/assets/Images/Home/CoHousing01_thumb.webp" alt=" " >
+          </div>
+        </a>
 
-      <div 
-        data-caption="Folkungavallen Linköping"  
-        class="card grid-col-span-2 grid-row-span-2 folkavallen">
-        <div class="card__img">
-          <img src="/assets/Images/Home/linkoping_gatuperspektiv_thumb.webp" alt=" " >
-        </div>
-      </div>
-      
-      <div
+        <a href="../pages/work/conceptualInterior.html"
+        data-caption="Conceptual Interior"
+        class="card grid-col-span-2 grid-row-span-2 conceptualInterior">
+          <div class="card__img">
+            <img class="img" data-src="/assets/Images/Home/ConceptualInterior01_thumb.webp" alt=" "  >
+          </div>
+        </a>
+
+        <a href="../pages/work/mobilesauna.html"
         data-caption="Mobile Sauna" 
-        class="card grid-col-span-4 grid-row-span-2 mobileSauna">
-        <div class="card__img">
-          <img src="/assets/Images/Home/mobilesauna1_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-      <div
-        data-caption="Norsk Finsk Museum" 
-        class="card grid-col-span-2 grid-row-span-1 norskFinskMuseum">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/NorskSkogsfinsk02_thumb.webp" alt=" " >
-        </div>
-      </div>
-      
-      <div
-        data-caption="Norsk Skogsfinsk Museum" 
-        class="card grid-col-span-4 grid-row-span-1 norskFinskMuseum">
+        class="card grid-col-span-4 grid-row-span-1 mobileSauna">
           <div class="card__img">
-            <img data-src="/assets/Images/Home/NorskSkogsfinsk03_thumb.webp" alt=" " >
+            <img data-src="/assets/Images/Home/mobilesauna6_thumb.webp" alt=" " >
           </div>
-        </div>
+        </a>
 
-      <div
-        data-caption="Apartment Fredhäll"  
-        class="card grid-col-span-2 grid-row-span-3 apartmentFredhall">
+        <a href="../pages/work/stables.html"
+        data-caption="Stable Alotments" 
+        class="card grid-col-span-2 grid-row-span-1 stableAlotments">
           <div class="card__img">
-            <img data-src="/assets/Images/Home/ApartmentFredhall04_thumb.webp" alt=" " >
+            <img data-src="/assets/Images/Home/StableAlotments01.webp" alt=" " >
           </div>
-      </div>
+        </a>
 
-      <div
-        data-caption="Rogaland Husby" 
-        class="card grid-col-span-4 grid-row-span-3 rogalandHusby">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/Rogaland01_thumb.webp" alt=" " >
-        </div>
-      </div>
+        <a href="../pages/work/vasjontorg.html"
+        data-caption="Väsjön"
+        class="card grid-col-span-4 grid-row-span-1 vasjon" >
+          <div class="card__img">
+            <img data-src="/assets/Images/Home/Vasjon02_thumb.webp" alt=" " >
+          </div>
+        </a>
 
-      <div
-        data-caption="Kv Autogyron 3" 
-        class="card grid-col-span-2 grid-row-span-1 autogyron">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/Autogyron02_thumb.webp" alt=" " >
-        </div>
-      </div>
+        <a href="../pages/work/barkarbystadenkv15.html"
+        data-caption="Barkarbystaden Kv 15"
+        class="card grid-col-span-4 grid-row-span-2 barkaby">
+          <div class="card__img">
+            <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-006_thumb.webp" alt=" " >
+          </div>
+        </a>
+ 
+        <a href="../pages/work/pavallionDjuprora.html"
+        data-caption="Pavillion Djuprora" 
+        class="card grid-col-span-2 grid-row-span-1 pavillionDjuprora">
+          <div class="card__img">
+            <img class="img" data-src="/assets/Images/Home/Djuprora01_thumb.webp" alt=" " >
+          </div>
+        </a>
 
-      <div
-      data-caption="Kv Autogyron 3" 
-      class="card grid-col-span-4 grid-row-span-2 autogyron">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/Autogyron01_thumb.webp" alt=" " >
-        </div>
-      </div>
+        <a href="../pages/work/lamp.html"
+        data-caption="Interior | Lamp"
+        class="card grid-col-span-2 grid-row-span-2 lamp">
+          <div class="card__img">
+            <img class="img" data-src="/assets/Images/Home/10Lamp1_thumb.webp" alt=" " >
+          </div>
+        </a>
 
-      <div
-        data-caption="Villa Concept" 
-        class="card grid-col-span-2 grid-row-span-1 conceptVilla">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/VillaConcept02_thumb.webp" alt=" " >
-        </div>
-      </div>
-      
-      <div
-      data-caption="Barkarbystaden Kv 15"
-      class="card grid-col-span-2 grid-row-span-3 barkaby">
-        <div class="card__img">
-          <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-099_thumb.webp" alt=" " >
-        </div>
-      </div>
+        <a href="../pages/work/barkarbystadenkv15.html"
+        data-caption="Barkarbystaden Kv 15"
+        class="card grid-col-span-2 grid-row-span-1 barkaby">
+          <div class="card__img">
+            <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-066_thumb.webp" alt=" " >
+          </div>
+        </a>
 
-      <div
-      data-caption="Älta Nacka Competition" 
-      class="card grid-col-span-4 grid-row-span-2 altaNacka">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/Alta02_thumb.webp" alt=" " >
-        </div>
-      </div>
-      
-
-      <div
-      data-caption="Concrete printed housing"
-      class="card grid-col-span-2 grid-row-span-1 concretePrint">
-        <div class="card__img">
-          <img class="img" data-src="/assets/Images/Home/ConcretePrint1_thumb.webp" alt=" " >
-        </div>
-      </div>
-      
-      <div
-      data-caption="Barkarbystaden Kv 15"
-      class="card grid-col-span-4 grid-row-span-1 barkaby">
-        <div class="card__img">
-          <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-128_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-      <div
-      data-caption="Rogaland Husby" 
-      class="card grid-col-span-4 grid-row-span-1 rogalandHusby">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/Rogaland02_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-      <div
-      data-caption="Norsk Skogsfinsk Museum" 
-      class="card grid-col-span-2 grid-row-span-1 norskFinskMuseum">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/NorskSkogsfinsk01_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-
-      <div
-      data-caption="Interior - Table" 
-      class="card grid-col-span-2 grid-row-span-1 norskFinskMuseum table">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/Table01_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-      <div
-      data-caption="Barkarbystaden Kv 15"
-      class="card grid-col-span-4 grid-row-span-2 barkaby">
-        <div class="card__img">
-          <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-049_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-      <div
-      data-caption="Module Houseing" 
-      class="card grid-col-span-2 grid-row-span-2 moduleHousing">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/ModuleHousing01_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-      <div
-      data-caption="Co-housing Concept"
-      class="card grid-col-span-2 grid-row-span-1 cohousingConcept">
-        <div class="card__img">
-          <img class="img" data-src="/assets/Images/Home/CoHousing01_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-      <div
-      data-caption="Conceptual Interior"
-      class="card grid-col-span-2 grid-row-span-2 conceptualInterior">
-        <div class="card__img">
-          <img class="img" data-src="/assets/Images/Home/ConceptualInterior01_thumb.webp" alt=" "  >
-        </div>
-      </div>
-
-      <div
-      data-caption="Mobile Sauna" 
-      class="card grid-col-span-4 grid-row-span-1 mobileSauna">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/mobilesauna6_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-      <div
-      data-caption="Stable Alotments" 
-      class="card grid-col-span-2 grid-row-span-1 stableAlotments">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/StableAlotments01.webp" alt=" " >
-        </div>
-      </div>
-
-      <div
-      data-caption="Väsjön"
-      class="card grid-col-span-4 grid-row-span-1 vasjon" >
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/Vasjon02_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-
-
-      <div
-      data-caption="Barkarbystaden Kv 15"
-      class="card grid-col-span-4 grid-row-span-2 barkaby">
-        <div class="card__img">
-          <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-006_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-
-      <div
-      data-caption="Pavillion Djuprora" 
-      class="card grid-col-span-2 grid-row-span-1 pavillionDjuprora">
-        <div class="card__img">
-          <img data-src="/assets/Images/Home/Djuprora01_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-      <div
-      data-caption="Interior | Lamp"
-      class="card grid-col-span-2 grid-row-span-2 lamp">
-        <div class="card__img">
-          <img class="img" data-src="/assets/Images/Home/10Lamp1_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-      <div
-      data-caption="Barkarbystaden Kv 15"
-      class="card grid-col-span-2 grid-row-span-1 barkaby">
-        <div class="card__img">
-          <img class="img" data-src="/assets/Images/Home/Barkaby-HIGH-066_thumb.webp" alt=" " >
-        </div>
-      </div>
-
-
-      <div
-      data-caption="Co-housing Concept"
-      class="card grid-col-span-2 grid-row-span-1 cohousingConcept">
-        <div class="card__img">
-          <img class="img" data-src="/assets/Images/Home/CoHousing05_thumb.webp" alt=" " >
-        </div>
-      </div> 
-      
+        <a href="../pages/work/cohousingconcept.html"
+        data-caption="Co-housing Concept"
+        class="card grid-col-span-2 grid-row-span-1 cohousingConcept">
+          <div class="card__img">
+            <img class="img" data-src="/assets/Images/Home/CoHousing05_thumb.webp" alt=" " >
+          </div>
+        </a> 
       </div>
     </section>
   </main>

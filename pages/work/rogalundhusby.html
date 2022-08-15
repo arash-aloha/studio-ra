@@ -23,6 +23,9 @@
     <script defer src="../../js/script.js"></script>
     <script defer src="../../js/workItems.js"></script>
 
+    <!-- slider -->
+    <script defer src="../../slider/RogalandHusby.js"></script>
+
     <title>Studio Rå | Rogaland Husby</title>
   </head>
   <body class="work-items-body">
@@ -49,29 +52,28 @@
         </ul>
       </nav>
 
-    <section class="project-wrapper">
-      <div class="work-item-description">
-        <h5>Rogaland Husby</h5>
-        <p>Housing 23 700 m² / 350 apartments</p>
-        <p>Kista, Stockholm.<br/></p>
-        <p>Sveaviken Bostad / Moko / Arkitekterna Krook & Tjäder.</p>
-        <p>As a part of the vision of connecting the districts Kista, Husby och Akalla these two housing block densifies the urban structure, creating a coherence. The architecture pick up rhythm, color scheme and details from the central parts of Husby but adds a modernity of wooden facades that adds a warmth to the outdoor environment. Towards the street facades have a closed block structure with public corners creating active nodes along the street. Towards the green area in the west the block structure opens up with lighter volumes in a smaller scale. Dramatic hight differences offers good conditions for an underground garage and generous roof terraces is a positive consequence of the downsizing of the volumes towards the west. The stairs in the middle is framed by two yellow buildings and becomes a connection between the street and the park and an active part of the exterior.</p>
-      </div>
-      <div class="itemImagesContainer">
-        <div class="thumbs">
-          <img src="/assets/Images/Work/RogalandHusby/Rogaland01_thumb.webp" alt="thumb1" />
-          <img src="/assets/Images/Work/RogalandHusby/Rogaland02_thumb.webp" alt="thumb2" />
-          <img src="/assets/Images/Work/RogalandHusby/Rogaland03_thumb.webp" alt="thumb2" />
-          
+      <section class="project-wrapper">
+        <div class="itemImagesContainer">
+          <span id="prevBtn" class="arrow prev"> <i class="bi bi-caret-left"></i> </span>
+
+          <div class="carouselContainer">
+            <img id="targetImage" class="sliderImage" src="/assets/Images/Work/RogalandHusby/Rogaland01_thumb.webp" alt=" " />
+          </div>
+
+          <span id="nextBtn" class="arrow next"> <i class="bi bi-caret-right"></i> </span>
         </div>
         
-        <div class="lg-image-container">
-          <img src="/assets/Images/Work/RogalandHusby/Rogaland01_thumb.webp" alt="thumb1" />
-        </div>
-        <a href="../work.html">
-          <span class="icon-back"><i class="bi bi-arrow-return-left"></i></span>
-        </a>
+        <div class="work-item-description">
+          <h5><b>Rogaland Husby</b></h5>
+          <p><b>Size </b>Housing 23 700 m² / 350 apartments</p>
+          <p><b>Location </b>Kista, Stockholm<br/></p>
+          <p><b>Info </b>Sveaviken Bostad / Moko / Arkitekterna Krook & Tjäder</p>
+          <p>As a part of the vision of connecting the districts Kista, Husby och Akalla these two housing block densifies the urban structure, creating a coherence. The architecture pick up rhythm, color scheme and details from the central parts of Husby but adds a modernity of wooden facades that adds a warmth to the outdoor environment. Towards the street facades have a closed block structure with public corners creating active nodes along the street. Towards the green area in the west the block structure opens up with lighter volumes in a smaller scale. Dramatic hight differences offers good conditions for an underground garage and generous roof terraces is a positive consequence of the downsizing of the volumes towards the west. The stairs in the middle is framed by two yellow buildings and becomes a connection between the street and the park and an active part of the exterior.</p>
       </div>
+
+      <a id="back-btn">
+        <span class="icon-back"><i class="bi bi-arrow-return-left"></i></span>
+      </a>
     </section>
   </main>
 </body>
