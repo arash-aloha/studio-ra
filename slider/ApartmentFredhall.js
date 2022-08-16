@@ -1,39 +1,22 @@
-const apartmentFredhall = [
-  {
-    src: '../assets/Images/Work/Apartment_Fredhall/ApartmentFredhall01.jpg',
-    caption : 'Apartment Fredhäll',
-    thumb   : '../assets/Images/Work/Apartment_Fredhall/ApartmentFredhall01_tumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src  : '../assets/Images/Work/Apartment_Fredhall/ApartmentFredhall02.jpg',
-    caption : 'Apartment Fredhäll',
-    thumb   : '../assets/Images/Work/Apartment_Fredhall/ApartmentFredhall02_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src  : '../assets/Images/Work/Apartment_Fredhall/ApartmentFredhall03.jpg',
-    caption : 'Apartment Fredhäll',
-    thumb   : '../assets/Images/Work/Apartment_Fredhall/ApartmentFredhall03_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src  : '../assets/Images/Work/Apartment_Fredhall/ApartmentFredhall04.jpeg',
-    caption : 'Apartment Fredhäll',
-    thumb   : '../assets/Images/Work/Apartment_Fredhall/ApartmentFredhall04_thumb.jpeg',
-    type: "image",
-    preload: true
-  },
+const images = [
+  '/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall01.webp',
+  '/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall02.webp',
+  '/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall03.webp',
+  '/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall04.webp',
 ]
 
-$(".apartmentFredhall").on('click', function() {
-  Fancybox.show(apartmentFredhall, {
-    // Your options go here
-    loop : true,
-    mainClass: "apartmentFredhall"
-  });
-
+nextBtn.addEventListener("click", () => {
+  if ( i >= images.length-1) i = -1;
+  i++;
+  return setImage();
 });
+
+prevBtn.addEventListener("click", () => {
+  if(i <= 0) i = images.length;
+  i--;
+  return setImage() ;
+});
+
+const setImage = () => {
+  return sliderImage.setAttribute("src", images[i]);
+}

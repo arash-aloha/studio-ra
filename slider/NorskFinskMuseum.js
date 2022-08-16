@@ -1,38 +1,29 @@
-const norskFinskMuseum = [
-  {
-    src: '../assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk01.jpg',
-    caption : 'Norsk Skogsfinsk Museum',
-    thumb   : '../assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk01_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src: '../assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk02.jpg',
-    caption : 'Norsk Skogsfinsk Museum',
-    thumb   : '../assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk02_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src: '../assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk03.jpg',
-    caption : 'Norsk Skogsfinsk Museum',
-    thumb   : '../assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk03_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src: '../assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk04.jpg',
-    caption : 'Norsk Skogsfinsk Museum',
-    thumb   : 'assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk04_thumb.jpg',
-    type: "image",
-    preload: true
-  }
+const images = [
+  '/assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk01.webp',
+  '/assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk02.webp',
+  '/assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk03.webp',
+  '/assets/Images/Work/NorskSkogsfinskMuseum/NorskSkogsfinsk04.webp',
 ]
 
-$(".norskFinskMuseum").on('click', function() {
-  Fancybox.show(norskFinskMuseum, {
-    // Your options go here
-    loop : true,
-  });
+const sliderImage = document.querySelector(".sliderImage");
+const carouselContainer = document.querySelector(".carouselContainer");
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
+let i = 0;
 
+nextBtn.addEventListener("click", () => {
+  if ( i >= images.length-1) i = -1;
+  i++;
+  return setImage();
 });
+
+prevBtn.addEventListener("click", () => {
+  if(i <= 0) i = images.length;
+  i--;
+  return setImage() ;
+});
+
+
+const setImage = () => {
+  return sliderImage.setAttribute("src", images[i]);
+}

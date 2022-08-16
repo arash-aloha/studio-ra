@@ -12,7 +12,6 @@ const checkFirstVisit = () => {
     setTimeout(displayHome, 1200);
     setTimeout(displayImg, 1200);
     setTimeout(displayWrapper, 1600);
-    setTimeout(displayScrollText, 1900);
     document.cookie = 'mycookie=1';
   }
   else {
@@ -20,7 +19,6 @@ const checkFirstVisit = () => {
     setTimeout(displayHome, 0);
     setTimeout(displayImg, 0);
     setTimeout(displayWrapper, 0);
-    setTimeout(displayScrollText, 0);
   }
 }
 
@@ -37,8 +35,4 @@ function displayHome() {
 function displayImg() {
   heroImg.style.opacity = 1;
   heroImg.style.transition = "opacity 1200ms linear";
-}
-function displayScrollText() {
-  heroText.style.opacity = 1;
-  heroText.style.transition = "opacity 1900ms linear";
 }

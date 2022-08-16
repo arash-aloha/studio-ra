@@ -13,8 +13,6 @@ let i = 0;
 nextBtn.addEventListener("click", () => {
   if ( i >= images.length-1) i = -1;
   i++;
-  sliderImage.style.transition = "visible 1s";
-  carouselContainer.style.transition = "visible 1s";
   return setImage();
 });
 

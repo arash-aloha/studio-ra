@@ -1,16 +1,26 @@
-const stableAlotments = [
-  {
-    src: '../assets/Images/Work/StableAlotments/StableAlotments01.jpg',
-    caption : 'Stable Alotments',
-    thumb   : '../assets/Images/Work/StableAlotments/StableAlotments01_thumb.jpg',
-    type: "image",
-    preload: true
-  }
+const images = [
+  '/assets/Images/Work/StableAlotments/StableAlotments01.wepb',
 ]
 
-$(".stableAlotments").on('click', function() {
-  Fancybox.show(stableAlotments, {
-    // Your options go here
-    loop : true,
-  });
+const sliderImage = document.querySelector(".sliderImage");
+const carouselContainer = document.querySelector(".carouselContainer");
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
+let i = 0;
+
+nextBtn.addEventListener("click", () => {
+  if ( i >= images.length-1) i = -1;
+  i++;
+  return setImage();
 });
+
+prevBtn.addEventListener("click", () => {
+  if(i <= 0) i = images.length;
+  i--;
+  return setImage() ;
+});
+
+
+const setImage = () => {
+  return sliderImage.setAttribute("src", images[i]);
+}

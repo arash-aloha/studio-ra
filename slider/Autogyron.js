@@ -1,24 +1,21 @@
-const autogyron = [
-  {
-    src: '../assets/Images/Work/Autogyron_Orebro/Autogyron01.jpg',
-    caption : 'Kv Autogyron 3 Örebro',
-    thumb   : '../assets/Images/Work/Autogyron_Orebro/Autogyron01_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src  : '../assets/Images/Work/Autogyron_Orebro/Autogyron02.jpg',
-    caption : 'Kv Autogyron 3 Örebro',
-    thumb   : '../assets/Images/Work/Autogyron_Orebro/Autogyron01_thumb.jpg',
-    type: "image",
-    preload: true
-  },
+const images = [
+  '/assets/Images/Work/Autogyron_Orebro/Autogyron01.webp',
+  '/assets/Images/Work/Autogyron_Orebro/Autogyron02.webp',
 ]
 
-$(".autogyron").on('click', function() {
-  Fancybox.show(autogyron, {
-    // Your options go here
-    loop : true,
-  });
-
+nextBtn.addEventListener("click", () => {
+  if ( i >= images.length-1) i = -1;
+  i++;
+  return setImage();
 });
+
+prevBtn.addEventListener("click", () => {
+  if(i <= 0) i = images.length;
+  i--;
+  return setImage() ;
+});
+
+
+const setImage = () => {
+  return sliderImage.setAttribute("src", images[i]);
+}

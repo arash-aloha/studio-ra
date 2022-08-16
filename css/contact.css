@@ -11,9 +11,10 @@
   gap: 1rem;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 0;
 }
 .contact-card {
-  width: 80%;
+  width: 100%;
 }
 .contact-img-container {
   width: 100%;
@@ -23,8 +24,8 @@
 }
 .contact-description {
   font-family: "mainRegular";
-  font-size: 0.50rem;
-  letter-spacing: 0.8px;
+  font-size: var(--body-font-size-xsmall);
+  letter-spacing: 0.5px;
 }
 .contact-description .name {
   font-family: "mainBold";
@@ -38,7 +39,7 @@
   align-items: center;
   flex-direction: column;
   font-family: "mainLight";
-  font-size: 0.65rem;
+  font-size: var(--body-font-size-xsmall);
 }
 
 /* big screen */
@@ -47,7 +48,7 @@
     height: 100vh;
   }
   .contact-description {
-    margin-top: 1rem;
+    margin-top: 0.50rem;
   }
 }
 
@@ -60,6 +61,8 @@
 
   .card-wrapper {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .contact-container {
     flex-direction: column;
@@ -67,17 +70,17 @@
   .contact-card {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 60%;
+    margin: 2rem;
   }
   .contact-img-container {
-    /* width: 60%; */
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
   }
   .contact-description {
-    font-size: 0.50rem;
+    font-size: var(--body-font-size-xsmall);
   }
   .contact-description p {
-    margin: 0 0 0.2rem 0.2rem;
+    margin: 0 0 0.2rem 0;
   }
   .work-container {
     margin: 0 1rem;
@@ -89,8 +92,8 @@
     flex-direction: column;
   }
   .contact-description {
-    font-size: 0.50rem;
+    font-size: var(--body-font-size-xsmall);
     align-self: flex-start;
-    margin: 0 0 0.2rem 0.2rem;
+    margin: 0 0 0.2rem 0;
   }
 }

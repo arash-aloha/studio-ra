@@ -1,23 +1,27 @@
-const pavillionDjuprora = [
-  {
-    src: '../assets/Images/Work/PavillionDjuprora/Djuprora01.jpeg',
-    caption : 'Pavillion Djupröra',
-    thumb   : '../assets/Images/Work/PavillionDjuprora/Djuprora01_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src: '../assets/Images/Work/PavillionDjuprora/Djuprora02.jpeg',
-    caption : 'Pavillion Djupröra',
-    thumb   : '../assets/Images/Work/PavillionDjuprora/Djuprora02_thumb.jpg',
-    type: "image",
-    preload: true
-  }
+const images = [
+    '/assets/Images/Work/PavillionDjuprora/Djuprora01.webp',
+    '/assets/Images/Work/PavillionDjuprora/Djuprora02.webp',
 ]
 
-$(".pavillionDjuprora").on('click', function() {
-  Fancybox.show(pavillionDjuprora, {
-    // Your options go here
-    loop : true,
-  });
+const sliderImage = document.querySelector(".sliderImage");
+const carouselContainer = document.querySelector(".carouselContainer");
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
+let i = 0;
+
+nextBtn.addEventListener("click", () => {
+  if ( i >= images.length-1) i = -1;
+  i++;
+  return setImage();
 });
+
+prevBtn.addEventListener("click", () => {
+  if(i <= 0) i = images.length;
+  i--;
+  return setImage() ;
+});
+
+
+const setImage = () => {
+  return sliderImage.setAttribute("src", images[i]);
+}

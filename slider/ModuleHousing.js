@@ -1,17 +1,27 @@
-const moduleHousing = [
-  {
-    src: '../assets/Images/Home/ModuleHousing01_thumb.webp',
-    caption : 'Module Housing',
-    thumb   : '../assets/Images/Home/ModuleHousing01_thumb.webp',
-    type: "image",
-    preload: true
-  }
+const images = [
+  '/assets/Images/Home/ModuleHousing01_thumb.webp',
+
 ]
 
-$(".moduleHousing").on('click', function() {
-  Fancybox.show(moduleHousing, {
-    // Your options go here
-    loop : true,
-  });
+const sliderImage = document.querySelector(".sliderImage");
+const carouselContainer = document.querySelector(".carouselContainer");
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
+let i = 0;
 
+nextBtn.addEventListener("click", () => {
+  if ( i >= images.length-1) i = -1;
+  i++;
+  return setImage();
 });
+
+prevBtn.addEventListener("click", () => {
+  if(i <= 0) i = images.length;
+  i--;
+  return setImage() ;
+});
+
+
+const setImage = () => {
+  return sliderImage.setAttribute("src", images[i]);
+}

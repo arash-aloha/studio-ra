@@ -27,7 +27,9 @@ let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("primary-header").style.top = "0";
+    document.getElementById("primary-header").style.top = "0 ";
+    document.getElementById("primary-header").style.left = "0 ";
+    document.getElementById("primary-header").style.right = "0 ";
   } else {
     document.getElementById("primary-header").style.top = "-4rem";
   }

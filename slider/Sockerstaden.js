@@ -1,17 +1,26 @@
-const sockerstaden = [
-  {
-    src: '../assets/Images/Work/Sockerstaden',
-    caption : 'Sockerstaden',
-    thumb   : '../assets/Images/Work/Sockerstaden',
-    type: "image",
-    preload: true
-  }
+const images = [
+ '/assets/Images/Work/Sockerstaden',
 ]
 
-$(".sockerstaden").on('click', function() {
-  Fancybox.show(sockerstaden, {
-    // Your options go here
-    loop : true,
-  });
+const sliderImage = document.querySelector(".sliderImage");
+const carouselContainer = document.querySelector(".carouselContainer");
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
+let i = 0;
 
+nextBtn.addEventListener("click", () => {
+  if ( i >= images.length-1) i = -1;
+  i++;
+  return setImage();
 });
+
+prevBtn.addEventListener("click", () => {
+  if(i <= 0) i = images.length;
+  i--;
+  return setImage() ;
+});
+
+
+const setImage = () => {
+  return sliderImage.setAttribute("src", images[i]);
+}

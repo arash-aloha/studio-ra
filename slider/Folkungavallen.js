@@ -1,5 +1,5 @@
 const images = [
-  '/assets/Images/Work/FolkungavallenLinkoping/linkoping_gatuperspektiv.jpg',
+  '/assets/Images/Work/FolkungavallenLinkoping/linkoping_gatuperspektiv.webp',
 ]
 
 const sliderImage = document.querySelector(".sliderImage");
@@ -9,8 +9,6 @@ const nextBtn = document.querySelector("#nextBtn");
 let i = 0;
 
 nextBtn.addEventListener("click", () => {
-  // sliderImage.style.transition = "transform 1s ease-in-out 1s";
-  // carouselContainer.style.transition = "transform 0.5s ease-in-out 1s";
   if ( i >= images.length-1) i = -1;
   i++;
   return setImage();

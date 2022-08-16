@@ -1,66 +1,34 @@
-const cohousingConcept = [
-  {
-    src: '../assets/Images/Work/Co-housing-Concept/CoHousing01_thumb.jpg',
-    caption : 'Co-housing concept',
-    thumb   : '../assets/Images/Work/Co-housing-Concept/CoHousing01_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src  : '../assets/Images/Work/Co-housing-Concept/CoHousing02.jpeg',
-    caption : 'Co-housing concept',
-    thumb   : '../assets/Images/Work/Co-housing-Concept/CoHousing02_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src  : '../assets/Images/Work/Co-housing-Concept/CoHousing03.jpg',
-    caption : 'Co-housing concept',
-    thumb   : '../assets/Images/Work/Co-housing-Concept/CoHousing03.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src  : '../assets/Images/Work/Co-housing-Concept/CoHousing04.jpg',
-    caption : 'Co-housing concept',
-    thumb   : '../assets/Images/Work/Co-housing-Concept/CoHousing04.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src  : '../assets/Images/Work/Co-housing-Concept/CoHousing05.jpg',
-    caption : 'Co-housing concept',
-    thumb   : '../assets/Images/Work/Co-housing-Concept/CoHousing05_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src  : '../assets/Images/Work/Co-housing-Concept/CoHousing06.jpg',
-    caption : 'Co-housing concept',
-    thumb   : '../assets/Images/Work/Co-housing-Concept/CoHousing06_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src  : '../assets/Images/Work/Co-housing-Concept/CoHousing07.jpg',
-    caption : 'Co-housing concept',
-    thumb   : '../assets/Images/Work/Co-housing-Concept/CoHousing07_thumb.jpg',
-    type: "image",
-    preload: true
-  },
-  {
-    src  : '../assets/Images/Work/Co-housing-Concept/CoHousing08_thumb.jpg',
-    caption : 'Co-housing concept',
-    thumb   : '../assets/Images/Work/Co-housing-Concept/CoHousing08.png',
-    type: "image",
-    preload: true
-  }
+const images = [
+  '/assets/Images/Work/Co-housing-Concept/CoHousing01_thumb.webp',
+  '/assets/Images/Work/Co-housing-Concept/CoHousing02.webp',
+  '/assets/Images/Work/Co-housing-Concept/CoHousing03.webp',
+  '/assets/Images/Work/Co-housing-Concept/CoHousing04.webp',
+  '/assets/Images/Work/Co-housing-Concept/CoHousing05.webp',
+  '/assets/Images/Work/Co-housing-Concept/CoHousing06.webp',
+  '/assets/Images/Work/Co-housing-Concept/CoHousing07.webp',
+  '/assets/Images/Work/Co-housing-Concept/CoHousing08_thumb.webp',
+
 ]
 
-$(".cohousingConcept").on('click', function() {
-  Fancybox.show(cohousingConcept, {
-    // Your options go here
-    loop : true,
-  });
+const sliderImage = document.querySelector(".sliderImage");
+const carouselContainer = document.querySelector(".carouselContainer");
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
+let i = 0;
 
+nextBtn.addEventListener("click", () => {
+  if ( i >= images.length-1) i = -1;
+  i++;
+  return setImage();
 });
+
+prevBtn.addEventListener("click", () => {
+  if(i <= 0) i = images.length;
+  i--;
+  return setImage() ;
+});
+
+
+const setImage = () => {
+  return sliderImage.setAttribute("src", images[i]);
+}
