@@ -70,7 +70,8 @@ b {
 
 #back-btn {
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 0.3rem;
+  width: 2rem;
 }
 #back-btn:hover .icon-back {
   color: rgb(153, 153, 153);
@@ -84,8 +85,8 @@ b {
 /* on big screens */
 @media (min-width: 45em) {
   .project-wrapper{
-    gap: 1rem;
-    display: block;
+    /* gap: 1rem; */
+    display: flex;
   }
   .carouselContainer {
     display: flex;
@@ -98,28 +99,49 @@ b {
     max-height: 100%;
     max-width: 100%;
     overflow: hidden;
-    object-fit: contain;
+    object-fit: cover;
   }
   .itemImagesContainer {
     height: 50vh;
-  }
 
+  }
   .icon-back {
-    margin: 1rem 0;
+    margin: 1rem -0.15rem;
   }
 }
 
 @media (max-width: 45em) {
+  .project-wrapper {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .bi-caret-left, .bi-caret-right {
+    visibility: visible;
+    transition: visable 350ms;
+  }
+  .itemImagesContainer {
+    height: 300px;
+    overflow: hidden;
+  }
   .carouselContainer{
     position: relative;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .carouselContainer img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 50vh;
   }
   .work-item-description {
     margin: 1rem 0.2rem 0 0.2rem
   }
-
+  .icon-back {
+    margin: 1rem 0.2rem 0 0.2rem;
+  }
 }

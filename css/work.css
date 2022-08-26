@@ -1,27 +1,27 @@
 .work-wrapper {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 .work-container {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  /* width: 100%; */
 }
 .year-placeholder{
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   position: relative;
 }
 .year {
   font-family: "mainBold";
+  width: 1.35rem;
   font-size: var(--body-font-size-small);
 }
 .workItemContainer{
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: .2rem;
 }
 .work-item {
   position: relative;
@@ -71,27 +71,35 @@
 /* on big screens */
 @media (min-width: 45em) {
   .workItemContainer{
-    gap: 0.3rem;
+    gap: 0.2rem;
   }
-  .works__ {
-    text-align: end;
-  }
+
   .work-container {
+    flex-direction: row-reverse;
     width: 30rem;
+  }
+  .workItemContainer {
+    margin-left: 1rem;
+    width: 6rem;
   }
   .workItemImageContainer {
     width: 90%;
-    height: 10rem;
+    height: 7rem;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
   }
   .workItemImageContainer img {
     overflow: hidden;
-    width: 100%;
+    width: 80%;
+    object-position: 50% 70%;
   }
   #sandbox {
     /* background-color: coral; */
-    height: 100%;
+    height: 90%;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -101,11 +109,16 @@
     display: none;
   }
   .works__ {
-    width: 100%;
-    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+  }
+  .workItemContainer{
+    /* text-align: end; */
   }
   .year-placeholder {
-    gap: 4rem;
+    /* gap: 4rem; */
   }
 
 }
@@ -113,14 +126,14 @@
 /* on small screens */
 @media (max-width: 45em) {
   .work-item {
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
     padding: 0 0.2rem 0.5rem 0.5rem;
   }
   .year-placeholder {
-    margin: 2rem 5rem 2rem 1rem;
-    width: 100%;
+    margin: 0rem 0.5rem;
+    /* width: 100%; */
   }
   .workItemContainer {
-    margin-right: 2rem;
+    /* margin-left: 3rem; */
   }
 }

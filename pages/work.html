@@ -25,6 +25,10 @@
     <script defer src="../js/script.js"></script>
     <script defer src="../js/work.js"></script>
 
+    <!-- transitions -->
+    <link rel="stylesheet" href="../css/transitions.css">
+    <script defer src="../js/transitions.js"></script>
+
     <title>Studio Rå | Work</title>
   </head>
   <body class="work">
@@ -52,7 +56,8 @@
         </ul>
       </nav>
 
-      <section class="work-container">
+      <section class="work-container page">
+        <div class="transition transition-1 is-active"></div>
 
         <div id="loading">
           <p>Loading...</p>
@@ -62,14 +67,15 @@
         <div id="sandbox"> 
           <div id="workItemImageContainer"
           class="workItemImageContainer">         
+          </div>
         </div>
-      </div>
       
         <div class="works__"> 
           <div class="year-placeholder">
             <p class="year">2022</p>
             
             <div class="workItemContainer">
+
               <div class="work-item">
                 <a href="/pages/work/rogalundhusby.html" class="work-item-anchor"
                 data-image="/assets/Images/Work/RogalandHusby/Rogaland01_thumb.webp" 
@@ -121,7 +127,7 @@
                 data-image="/assets/Images/Work/Barkarbystaden_Kv_15/16-Barkarbystaden15-3_thumb.webp"
                 >
                   <div class="work-item-description">
-                    <p><span class="project-name">Barkarbystaden Kvarter 15 Housing</span></p>
+                    <p><span class="project-name">Barkarbystaden Kvarter 15</span></p>
                   </div>
                 </a>
               </div>

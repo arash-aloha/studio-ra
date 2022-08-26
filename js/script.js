@@ -1,7 +1,4 @@
 
-
-console.log("Script is running...");
-
 const activePage = window.location.pathname;
 
 const primaryNav = document.querySelector(".primary-navigation");

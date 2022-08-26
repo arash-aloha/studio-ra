@@ -1,6 +1,6 @@
 
 const images = [
-  '/assets/Images/Work/Barkarbystaden_Kv_15/07-Barkarbystden-red_thumb.webp',
+  '/assets/Images/Work/Barkarbystaden_Kv_15/07-Barkarbystden-red.webp',
   '/assets/Images/Work/Barkarbystaden_Kv_15/16-Barkarbystaden15-3.webp',
   '/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-006.webp',
   '/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-049.webp',

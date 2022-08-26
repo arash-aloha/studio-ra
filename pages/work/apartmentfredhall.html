@@ -22,6 +22,12 @@
     <!-- js -->
     <script defer src="../../js/script.js"></script>
     <script defer src="../../js/workItems.js"></script>
+    <!-- slider -->
+    <script defer src="../../slider/ApartmentFredhall.js"></script>
+
+    <!-- transitions -->
+    <link rel="stylesheet" href="../../css/transitions.css">
+    <script defer src="../../js/transitions.js"></script>
 
     <title>Studio Rå | Apartment Fredhäll</title>
   </head>
@@ -50,12 +56,14 @@
       </nav>
 
     <section class="project-wrapper">
+
+      <div class="transition transition-2 is-active"></div>
        
       <div class="itemImagesContainer">  
         <span id="prevBtn" class="arrow prev"> <i class="bi bi-caret-left"></i> </span>
 
         <div class="carouselContainer">
-          <img id="targetImage" class="sliderImage" src="/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall04_thumb.webp" alt="thumb4" />
+          <img id="targetImage" class="sliderImage" src="/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall04_thumb.webp" alt="image" />
         </div>
 
         <span id="nextBtn" class="arrow next"> <i class="bi bi-caret-right"></i> </span>  
@@ -69,7 +77,7 @@
       </div>
       
       <a id="back-btn">
-        <span class="icon-back"><i class="bi bi-arrow-return-left"></i></span>
+        <span class="icon-back"><i class="bi bi-arrow-left-short"></i></span>
       </a>
     </section>
   </main>

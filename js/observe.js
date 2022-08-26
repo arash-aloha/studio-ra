@@ -1,5 +1,3 @@
-console.log("running lazy")
-
 const targets = document.querySelectorAll('[data-src]');
 
 const lazyLoad = target => {

@@ -1,5 +1,5 @@
 const images = [
-    '/assets/Images/Work/PavillionDjuprora/Djuprora01.webp',
+    '/assets/Images/Work/PavillionDjuprora/Djuprora01_thumb.webp',
     '/assets/Images/Work/PavillionDjuprora/Djuprora02.webp',
 ]
 

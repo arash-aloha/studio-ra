@@ -1,6 +1,3 @@
-const loading = () => {
-  window.onload = function () {
-    document.getElementById("loading").style.display = "none";
-  };
-};
-loading()
+window.onload = () => {
+  document.getElementById("loading").style.display = "none";
+}

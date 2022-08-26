@@ -5,6 +5,12 @@ const images = [
   '/assets/Images/Work/Apartment_Fredhall/ApartmentFredhall04.webp',
 ]
 
+const sliderImage = document.querySelector(".sliderImage");
+const carouselContainer = document.querySelector(".carouselContainer");
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
+let i = 0;
+
 nextBtn.addEventListener("click", () => {
   if ( i >= images.length-1) i = -1;
   i++;

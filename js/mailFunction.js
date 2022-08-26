@@ -16,7 +16,7 @@ mailtoCamilo.addEventListener("click", () => {
 
 function sendEmail() {
   {
-    window.location = "mailto:hello@studio-ra.se";
+    window.location = "mailto:hej@studio-ra.se";
   }
 };
 function sendEmailToMalin() {

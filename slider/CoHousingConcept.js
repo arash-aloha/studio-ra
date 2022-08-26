@@ -6,7 +6,7 @@ const images = [
   '/assets/Images/Work/Co-housing-Concept/CoHousing05.webp',
   '/assets/Images/Work/Co-housing-Concept/CoHousing06.webp',
   '/assets/Images/Work/Co-housing-Concept/CoHousing07.webp',
-  '/assets/Images/Work/Co-housing-Concept/CoHousing08_thumb.webp',
+  '/assets/Images/Work/Co-housing-Concept/CoHousing08.webp',
 
 ]
 
