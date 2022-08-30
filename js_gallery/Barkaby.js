@@ -15,25 +15,36 @@ const images = [
   '/assets/Images/Work/Barkarbystaden_Kv_15/Barkaby-HIGH-128.webp',
 ];
 
-const sliderImage = document.querySelector(".sliderImage");
-const carouselContainer = document.querySelector(".carouselContainer");
+
+import { nextImage, prevImage, swipedetect } from "../js/swiper.js";
+
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
-let i = 0;
+const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+var touchableElement = document.querySelector('.itemImagesContainer');
 
-nextBtn.addEventListener("click", () => {
-  if ( i >= images.length-1) i = -1;
-  i++;
-  return setImage();
+
+if (isMobile) {
+  
+swipedetect(touchableElement, function(swipedir){
+  if (swipedir =='left') {
+    return nextImage(images);
+  };
+  
+  if (swipedir == 'right') {
+    return prevImage(images);
+  };
 });
-
-prevBtn.addEventListener("click", () => {
-  if(i <= 0) i = images.length;
-  i--;
-  return setImage() ;
-});
+};
 
 
-const setImage = () => {
-  return sliderImage.setAttribute("src", images[i]);
-}
+if(!isMobile) {
+  nextBtn.addEventListener("click", () => {
+    return nextImage(images)
+  });
+  
+  prevBtn.addEventListener("click", () => {
+    return prevImage(images)
+  });
+};
+

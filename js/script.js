@@ -7,7 +7,7 @@ const navToggle = document.querySelector(".mobile-nav-toggle");
 navToggle.addEventListener("click", () => {
   primaryNav.classList.toggle("is-visible");
   navToggle.classList.toggle("active");
-});
+}, false);
 
 
 //active hyperlink
@@ -17,7 +17,7 @@ links.forEach(link => {
     if(link.href.includes(`${activePage}`)) {
       link.setAttribute('aria-current', 'page');
     }
-  });
+  }, false);
 
 // mouse scroll nav
 let prevScrollpos = window.pageYOffset;
@@ -42,7 +42,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           behavior: 'smooth'
       });
   });
-});
+}, false);
 
 
 
@@ -50,5 +50,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 let mailto = document.getElementById("mailto");
 mailto.addEventListener("click", () => {
   sendEmail();
-});
+}, false);
 
