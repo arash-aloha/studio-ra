@@ -19,13 +19,13 @@ b {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 .arrow {
   cursor: pointer;
   color: var(--clr-bg-light);
   opacity: 0.1;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   z-index: 99;
@@ -38,12 +38,12 @@ b {
 #prevBtn:hover .bi-caret-left {
   background-color: var(--clr-bg-white);
   border-radius: 10px;
-  visibility: visible;
+  visibility: hidden;
 }
 #nextBtn:hover .bi-caret-right {
   background-color: var(--clr-bg-white);
   border-radius: 10px;
-  visibility: visible;
+  visibility: hidden;
 }
 .icon-back {
   color: var(--clr-bg-light);
@@ -57,14 +57,14 @@ b {
   position: absolute;
   left: 0;
   width: 50%;
-  display: flex;
+  display: none;
   justify-content: flex-start;
 }
 .next {
   position: absolute;
   right: 0;
   width: 50%;
-  display: flex;
+  display: none;
   justify-content: flex-end;
 }
 
@@ -103,7 +103,6 @@ b {
   }
   .itemImagesContainer {
     height: 50vh;
-
   }
   .icon-back {
     margin: 1rem -0.15rem;

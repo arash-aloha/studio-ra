@@ -45,10 +45,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 }, false);
 
 
-
-// mail to funciton
-let mailto = document.getElementById("mailto");
-mailto.addEventListener("click", () => {
-  sendEmail();
-}, false);
-

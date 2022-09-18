@@ -20,6 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         window.location.href = target;
       }, 500);
+
+            
+      setTimeout(() => {
+        transitionElement.classList.remove("is-active");
+      }, 700);
     });
   };
 

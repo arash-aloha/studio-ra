@@ -10,7 +10,6 @@ mailtoEmilie.addEventListener("click", () => {
 
 let mailtoCamilo = document.querySelector("#mailtoCamilo");
 mailtoCamilo.addEventListener("click", () => {
-  console.log("clicked on camilo")
   window.location = "mailto:camilo@studio-ra.se";
 });
 
@@ -34,3 +33,9 @@ function sendEmailToCamilo() {
     
   }
 };
+
+// mail to funciton
+let mailto = document.getElementById("mailto");
+mailto.addEventListener("click", () => {
+  sendEmail();
+}, false);

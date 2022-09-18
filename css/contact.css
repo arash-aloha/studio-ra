@@ -56,10 +56,13 @@
 /* big screen */
 @media (min-width: 45em) {
   .contact-wrapper {
-    height: 100vh;
+    height: 80vh;
   }
   .contact-description {
     margin-top: 0.50rem;
+  }
+  .card-wrapper {
+    height: 30rem;
   }
 }
 

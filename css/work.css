@@ -84,7 +84,7 @@
   }
   .workItemImageContainer {
     width: 90%;
-    height: 7rem;
+    height: 12rem;
     overflow: hidden;
     display: flex;
     justify-content: flex-end;

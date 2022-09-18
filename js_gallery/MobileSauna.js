@@ -2,8 +2,8 @@ const images = [
   '/assets/Images/Work/MobileSauna/mobilesauna1.webp',
   '/assets/Images/Work/MobileSauna/mobilesauna2.webp',
   '/assets/Images/Work/MobileSauna/mobilesauna3.webp',
-  '/assets/Images/Work/MobileSauna/mobilesauna4.webp',
-  '/assets/Images/Work/MobileSauna/mobilesauna5.webp',
+  '/assets/Images/Work/MobileSauna/mobilesauna4_thumb.webp',
+  '/assets/Images/Work/MobileSauna/mobilesauna5_thumb.webp',
   '/assets/Images/Work/MobileSauna/mobilesauna6.webp',
 ]
 
