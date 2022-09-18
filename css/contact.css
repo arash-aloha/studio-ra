@@ -1,0 +1,115 @@
+.contact-header {
+  display: none;
+}
+.card-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* justify-content: space-between; */
+  position: relative;
+  margin-bottom: 0;
+}
+.contact-card {
+  width: 100%;
+}
+.contact-img-container {
+  width: 100%;
+}
+.contact-img {
+  width: 100%;
+}
+.contact-description,
+.presentation {
+  font-family: "mainRegular";
+  font-size: var(--body-font-size-xsmall);
+  letter-spacing: 0.5px;
+}
+.contact-description .name, 
+.presentation .name {
+  font-family: "mainBold";
+}
+.presentation {
+  font-size: 0.50rem;
+}
+.presentation p {
+  margin-bottom: 0.05rem;
+}
+#mailtoCamilo, #mailtoMalin, #mailtoEmilie {
+  cursor: pointer;
+}
+.contact-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "mainLight";
+  font-size: var(--body-font-size-xsmall);
+}
+.ig-icon {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+/* big screen */
+@media (min-width: 45em) {
+  .contact-wrapper {
+    height: 80vh;
+  }
+  .contact-description {
+    margin-top: 0.50rem;
+  }
+  .card-wrapper {
+    height: 30rem;
+  }
+}
+
+
+/* mobile */
+@media (max-width: 45em) {
+  body {
+    margin: 0;
+  }
+  .presentation {
+    margin-left: 0.3rem;
+  }
+  .card-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 1rem;
+  }
+  .contact-img-container {
+    margin-bottom: 0.2rem;
+  }
+  .contact-description {
+    font-size: var(--body-font-size-xsmall);
+  }
+  .contact-description p {
+    margin: 0 0 0.2rem 0;
+  }
+  .work-container {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 37em) {
+  .contact-card {
+    flex-direction: column;
+  }
+  .contact-description {
+    font-size: var(--body-font-size-xsmall);
+    align-self: flex-start;
+    margin: 0 0 0.2rem 0;
+  }
+}
