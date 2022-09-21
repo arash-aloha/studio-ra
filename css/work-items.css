@@ -19,7 +19,7 @@ b {
   position: relative;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 .arrow {
   cursor: pointer;
@@ -57,14 +57,14 @@ b {
   position: absolute;
   left: 0;
   width: 50%;
-  display: none;
+  display: flex;
   justify-content: flex-start;
 }
 .next {
   position: absolute;
   right: 0;
   width: 50%;
-  display: none;
+  display: flex;
   justify-content: flex-end;
 }
 
