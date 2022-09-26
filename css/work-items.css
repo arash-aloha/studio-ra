@@ -118,7 +118,7 @@ b {
     justify-content: space-evenly;
   }
   .bi-caret-left, .bi-caret-right {
-    visibility: visible;
+    visibility: hidden;
     transition: visable 350ms;
   }
   .itemImagesContainer {
