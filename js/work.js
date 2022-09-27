@@ -5,6 +5,7 @@ const workItemImageContainer = document.getElementById("workItemImageContainer")
 
 items.forEach(item => {
   item.addEventListener("mouseenter", (e) => {
+    workItemImageContainer.removeChild(workItemImageContainer.firstChild);
     //get src for targeted image
     imageData = e.target.getAttribute('data-image');
     //create img el
@@ -23,14 +24,14 @@ items.forEach(item => {
   //   image.style.top = e.clientY + 'px'
   //   image.style.left = e.clientX + 'px'
   // })
-  item.addEventListener("mouseleave", () => {
-    //if img el is true, remove el
-    while (workItemImageContainer.firstChild) {
-      workItemImageContainer.removeChild(workItemImageContainer.firstChild);
-    }
-    workItemImageContainer.classList.remove("active");
-    workItemImageContainer.classList.add("fade");
-  });
+  // item.addEventListener("mouseleave", () => {
+  //   //if img el is true, remove el
+  //   while (workItemImageContainer.firstChild) {
+  //     workItemImageContainer.removeChild(workItemImageContainer.firstChild);
+  //   }
+  //   workItemImageContainer.classList.remove("active");
+  //   workItemImageContainer.classList.add("fade");
+  // });
 });
 
 
